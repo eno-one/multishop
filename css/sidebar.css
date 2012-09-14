@@ -1,0 +1,93 @@
+/*--- sidebar-inner ---*/
+.sidebar{
+  float: left;
+  width: 220px;
+  height: 100%;
+  border-right: 1px solid #949597;
+  background-color: #f4f4f4;
+}
+.hide-block{
+  background-color: #f1f1f1;
+  border-left: 1px solid #ccc;
+  cursor: pointer;
+  display: block;
+  float: right;
+  height: 100%;
+  width: 3px; 
+}
+.hide-block:hover{
+  background-color: #fff;
+}
+.sidebar-inner {
+  padding: 18px 0 24px;
+  background: #F4F4F4;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0e0e0', endColorstr='#f4f4f4');
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e0e0e0), to(#f4f4f4));
+    background: -moz-linear-gradient(top,  #e0e0e0,  #f4f4f4); 
+    background: -o-linear-gradient(top,  #e0e0e0,  #f4f4f4);
+    background: -ms-linear-gradient(top,  #e0e0e0,  #f4f4f4);
+}
+.sidebar-inner h2{
+  text-align: center;
+}
+.sidebar-inner ul{
+  margin: 0 0 42px 0;
+}
+.sidebar-inner li {
+  list-style: none;
+}
+.sidebar-inner li a{
+  color: #333;
+  font-size: 14px;
+  display: block;
+  text-decoration: none;
+  line-height: 27px;
+  padding-left: 43px;
+  text-shadow: 0 1px 1px #fff;
+}
+.sidebar-inner li a:hover{
+  background-color: #cacaca;
+}
+.sidebar-inner li a.active{
+  background-color: #448ccb;
+  color: #fff;
+  text-decoration: underline;
+  line-height: 25px;
+  text-shadow: 0px 0px 0px #fff;
+}
+.sidebar-inner li a.active:hover{
+  color: #fff;
+  text-shadow: 0px 0px 0px #fff;
+}
+.category-wrapper{
+  margin: 0px 0 12px 19px;
+  padding: 0 0 0 24px;
+} 
+.menu-category{
+  color: #448CCB;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 24px 0 0;
+  text-decoration: none;
+  text-shadow: 0 1px 1px #FFFFFF;
+  text-transform: uppercase;
+  background: url('../img/icons.png') no-repeat;
+}
+.menu-category:hover{
+  color: #448CCB;
+}
+.administrator, .moderator, .developer{
+  background: url('../img/icons.png') no-repeat;
+}
+.administrator{background-position: 0 -18px;}
+.administrator:hover{background-position: 0 -75px;}
+.developer{background-position: 0 -38px;}
+.developer:hover{background-position: 0 -94px;}
+.moderator{background-position: 0 0px;}
+.moderator:hover{background-position: 0 -57px;}
+.opened{
+  background-position: 100% -114px;
+}
+.closed{
+  background-position: 100% -133px;
+}

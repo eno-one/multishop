@@ -1,0 +1,28 @@
+body {
+  font: 13px/20px Verdana, sans-serif;
+  background-color: #8c96a3;
+}
+p {
+  margin: 0 0 18px;
+}
+img {
+  border: none;
+}
+.fl-r{
+  float: right;
+}
+.fl-l{
+  float: left;
+}
+/* разметка */
+.middle {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  min-width: 960px;
+  /*
+  background: url('../img/bg.jpg') repeat-y;
+  background-position-x: 0;
+  background-position-y: 0;
+  */
+}

@@ -1,0 +1,59 @@
+.simple-button {
+  -o-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}    
+.sidebar-inner li a{
+  -o-text-shadow: 0 1px 1px #fff;
+  -moz-text-shadow: 0 1px 1px #fff;
+  -webkit-text-shadow: 0 1px 1px #fff;
+}
+.sidebar-inner li a.active{
+  -o-text-shadow: 0px 0px 0px #fff;
+  -moz-text-shadow: 0px 0px 0px #fff;
+  -webkit-text-shadow: 0px 0px 0px #fff;
+}
+.sidebar-inner li a.active:hover{
+  -o-text-shadow: 0px 0px 0px #fff;
+  -moz-text-shadow: 0px 0px 0px #fff;
+  -webkit-text-shadow: 0px 0px 0px #fff;
+}
+
+.menu-category{
+  -o-text-shadow: 0 1px 1px #fff;
+  -moz-text-shadow: 0 1px 1px #fff;
+  -webkit-text-shadow: 0 1px 1px #fff;
+}
+.bread-crumbs a{
+  -o-text-shadow: 0px 1px 1px #fff;
+  -moz-text-shadow: 0px 1px 1px #fff;
+  -webkit-text-shadow: 0px 1px 1px #fff;
+}
+.bread-crumbs a:hover{
+  -o-text-shadow: 0px 1px 1px #fff;
+  -moz-text-shadow: 0px 1px 1px #fff;
+  -webkit-text-shadow: 0px 1px 1px #fff;
+}
+.bread-crumbs > span{
+  -o-text-shadow: 0px 1px 1px #fff;
+  -moz-text-shadow: 0px 1px 1px #fff;
+  -webkit-text-shadow: 0px 1px 1px #fff;
+}
+.left-button{
+  -o-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px 0 0 3px;
+}
+.right-button{
+  -o-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 0 3px 3px 0;
+}
+.selection .active {
+  -o-box-shadow: 0 1px 3px #326795 inset;
+  -moz-box-shadow: 0 1px 3px #326795 inset;
+  -webkit-box-shadow: 0 1px 3px #326795 inset;
+  -o-text-shadow: none;
+  -moz-text-shadow: none;
+  -webkit-text-shadow: none;
+}

@@ -1,0 +1,40 @@
+
+table{
+  width: 100%;
+}
+.even td{
+  background-color: #E2E2E2;
+}
+table a{
+  text-decoration: underline;
+}
+table td{
+  border-top: 1px solid #c9c9c9;
+  border-bottom: 2px solid #fff;
+  background-color: #fff;
+}
+thead th{
+  color: #fff;
+  font-weight: normal;
+  padding: 4px 14px;
+  border-left: none;
+  text-align: center;
+  text-shadow: 0px 1px 1px #000;
+  background: url("../img/table-border.png") no-repeat scroll right center transparent;
+}
+thead th a{
+  color: #fff;
+  font-weight: normal;
+}
+thead th a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+thead{
+background: #69717e;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#535c69', endColorstr='#7d8591');
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#535c69), to(#7d8591));
+  background: -moz-linear-gradient(top,  #535c69,  #7d8591); 
+  background: -o-linear-gradient(top,  #535c69,  #7d8591);
+  background: -ms-linear-gradient(top,  #535c69,  #7d8591); 
+}

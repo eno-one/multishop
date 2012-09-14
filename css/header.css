@@ -1,0 +1,74 @@
+/* Header
+-----------------------------------------------------------------------------*/
+header {
+  height: 29px;
+  padding-top: 5px;
+  padding: 5px 20px 5px 30px;
+  background: url('../img/headerBg.jpg') repeat-x 0 0;
+  border-bottom: 1px solid #999;
+}
+header a {
+  color: #eae9e9;
+}
+.right-block{
+  float: right;
+}
+.region,
+.region li,
+.border,
+.name,
+.logout,
+.logo,
+.header-notification{
+  display: inline-block;
+  vertical-align: middle;
+}
+.logo img{
+  margin: 4px 0 0;
+}
+.header-notification{
+  color: #fff;
+  margin: 0 20px; 
+}
+.header-notification span{
+  color: red;
+}
+.logout{
+  height: 15px;
+}
+.name:hover{
+  color: #fff; 
+  text-decoration: none;
+}
+.region{
+   overflow: hidden;
+ }
+.region li {
+  float: left;
+}
+.region a {
+  display: block;
+  color: #71bdff;
+  line-height: 19px;
+  text-decoration: none;
+  padding: 1px 10px;
+}
+.region a:hover {
+  color: #fff;
+}
+.region .active {
+  cursor: default;
+  background-color: #448CCB;
+  box-shadow: 0 1px 2px #1E3D59 inset;
+  color: #fff;
+  border-radius: 3px;
+    -o-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+header .border{
+  width: 2px;
+  height: 29px;
+  margin: 0 12px;
+  background: url('../img/topbar-border.png') no-repeat center center;
+}

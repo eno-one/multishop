@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <title></title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+  <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <!--[if IE]>
+    <link rel="stylesheet" href="css/style-ie.css">
+    <script type="text/javascript" src="js/ie6fix.js"></script>
+    <script type="text/javascript">
+      DD_belatedPNG.fix('.png24');
+    
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('aside');
+        document.createElement('footer');
+    </script>
+    <![endif]-->
+
+</head>
+
+<body>
+  <header>
+    <div class="right-block">
+      <ul class="region">
+        <li><a href="#moscow">Москва</a></li>
+        <li><a href="#piter">Санкт-Петербург</a></li>
+        <li><a href="#russia" class="active">Россия</a></li>
+      </ul>
+      <span class="border"></span>
+      <a href="#" class="name">Иванов Иван</a>
+      <span class="border"></span>
+      <a href="#" class="logout" title="Выйти"><img src="img/logout.png" width="15" height="15" alt="Выйти" /></a>
+    </div>  
+    <a class="logo" href="#">
+      <img src="img/logo.png" width="167" height="20" alt="Multishop" />
+    </a>
+    <div class="header-notification">Прозвоны <span>(45)</span></div>
+  </header>
+  <div class="middle">
+    <div class="sidebar">
+      <div class="hide-block"></div>
+      <div class="sidebar-inner">
+          <div class="administrator category-wrapper"><a href='#' class="menu-category opened">Администратор</a></div>
+          <ul>
+            <li><a href="#" class="active">Заказы <span id="new-orders">(+5)</span></a></li>
+            <li><a href="#">Возвраты</a></li>
+            <li><a href="#">Склады</a></li>
+            <li><a href="#">Артикулы</a></li>
+          </ul>
+          <div class="moderator category-wrapper"><a href='#' class="menu-category opened">Руководитель</a></div>
+          <ul>
+            <li><a href="#">Отчёты</a></li>
+            <li><a href="#">Закупки</a></li>
+            <li><a href="#">Списания</a></li>
+            <li><a href="#">Расходы</a></li>
+            <li><a href="#">Финансы</a></li>
+            <li><a href="#">Пользователи</a></li>
+            <li><a href="#">Контрагенты</a></li>
+          </ul>
+          <div class="developer category-wrapper"><a href='#' class="menu-category opened">Разработчик</a></div>
+          <ul class="hidden">
+            <!-- тут пункты меню - заглушки -->
+            <li><a href="#">Отчёты</a></li>
+            <li><a href="#">Закупки</a></li>
+            <li><a href="#">Списания</a></li>
+            <li><a href="#">Расходы</a></li>
+            <li><a href="#">Финансы</a></li>
+            <li><a href="#">Пользователи</a></li>
+            <li><a href="#">Контрагенты</a></li>
+          </ul>
+					<div class="qqq category-wrapper"><a href='#' class="menu-category opened">Разработчик</a></div>
+          <ul class="hidden">
+            <!-- тут пункты меню - заглушки -->
+            <li><a href="#">Отчёты</a></li>
+            <li><a href="#">Закупки</a></li>
+            <li><a href="#">Списания</a></li>
+            <li><a href="#">Расходы</a></li>
+            <li><a href="#">Финансы</a></li>
+            <li><a href="#">Пользователи</a></li>
+            <li><a href="#">Контрагенты</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-inner">
+        <div class="direction">
+          <div class="selection">
+            <ul>
+              <li><a href="#" class="left-button">Открытые</a></li>
+              <li><a href="#" class="middle-button">Закрытые</a></li>
+              <li><a href="#" class="right-button active">Все</a></li>
+            </ul>  
+            <span class="border"></span>
+              <a href="#" class="simple-button add"><span></span></a>
+          </div>
+          <div class="bread-crumbs">
+            <a href="#" title="На главную" class="home"><span></span></a>
+            <a href="#"><span>Склады</span></a>
+            <a href="#"><span>Передача товара</span></a>
+            <span>Москва &rarr; Миша</span>
+          </div>
+        </div>
+        <div class="content">
+          <form class="general-form">
+            <div class="filtration">
+              <div class="row">
+                <a href="#" class="open-filtr">Открыть фильтр</a>
+                <dl class="horizontal c20l">
+                  <dd class="type-text">
+                    <input type="text" placeholder="Поиск">
+                  </dd>
+                </dl>
+              </div>
+              <div class="hidden-part">
+                <div class="row">
+                  <dl class="vertical c20l">
+                    <dt><label for="">Статус:</label></dt>
+                    <dd class="type-select">
+                      <select>
+                        <option>132</option>
+                      </select>
+                    </dd>
+                  </dl>
+                  <dl class="vertical c20l">
+                    <dt><label for="">ФИО клиента</label></dt>
+                    <dd class="type-text">
+                      <input type="text">
+                    </dd>
+                  </dl>
+                  <dl class="vertical c20l">
+                    <dt><label for="">Телефон:</label></dt>
+                    <dd class="type-text"><input type="text"></dd>
+                  </dl>
+                  <dl class="vertical c20l">
+                    <dt><label for="">Адрес</label></dt>
+                    <dd class="type-text"><input type="text"></dd>
+                  </dl>
+                  <dl class="vertical c20l no-label">
+                    <dd class="type-button"><input type="submit" value="Фильтр"></dd>
+                  </dl>
+                </div>
+              </div>  
+            </div>
+            
+            <div class="table-wrapper">
+              <table class="stripped">
+                <thead>
+                  <tr>
+                    <th><dl class="horizontal"><dd class="type-check"><input type="checkbox"></dd></dl></th> <th><a href="#" class="active">№</a></th> <th><a href="#" class="active">Цена</a></th> <th><a href="#" class="active">Клиент</a></th> <th><a href="#" class="active">Регион</a></th> <th><a href="#" class="active">Адрес</a></th> <th><a href="#" class="active">Сайт</a></th> <th><a href="#" class="active">Доставка</a></th> <th><a href="#" class="active">Склад</a></th> <th><a href="#" class="active">Состояние</a></th> <th><a href="#" class="active">Действие</a></th> 
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="status-1 odd">
+                    <td><div class="type-check"><input type="checkbox"></div></td> <td><a href="#qqq" class="fancy">1025</a></td> <td>14 562</td> <td>Петров Пётр Петрович</td> <td>Москва</td> <td>Южная, д. 45, кв1</td> <td>Wi-Fi</td> <td>05.04.2001</td> <td>Антон</td> <td>Оплачен</td> <td><a href="#" class="print" title="Распечатать"></a> <a href="#" class="edit" title="Изменить заказ"></a></td>
+                  </tr>
+                  <tr class="status-2 even">
+                    <td><div class="type-check"><input type="checkbox"></div></td> <td><a href="#">1025</a></td> <td>562</td> <td>Иванов Иван Иваныч</td> <td>Москва</td> <td>Коммунситическая ул, д.78, кв 4</td> <td>Wi-Fi</td> <td>05.04.2001</td> <td>Саша</td> <td>Оплачен</td> <td><a href="#" class="print" title="Распечатать"></a> <a href="#" class="edit" title="Изменить заказ"></a></td>
+                  </tr>
+                  <tr class="status-3 odd">
+                    <td><div class="type-check"><input type="checkbox"></div></td> <td><a href="#">1025</a></td> <td>14 562</td> <td>Лилиева Лилия Лилиевна</td> <td>Москва</td> <td>Южная, д. 45, кв1</td> <td>Wi-Fi</td> <td>05.04.2001</td> <td>Антон</td> <td>Оплачен</td> <td><a href="#" class="print" title="Распечатать"></a> <a href="#" class="edit" title="Изменить заказ"></a></td>
+                  </tr>
+                  <tr class="even">
+                    <td><div class="type-check"><input type="checkbox"></div></td> <td><a href="#">1025</a></td> <td> 562</td> <td>Мардашкин Иван Степаныч</td> <td>Москва</td> <td>Южная, д. 45, кв1</td> <td>Wi-Fi</td> <td>05.04.2001</td> <td>Антон</td> <td>Оплачен</td> <td><a href="#" class="print" title="Распечатать"></a> <a href="#" class="edit" title="Изменить заказ"></a></td>
+                  </tr>
+                  <tr class="odd">
+                    <td><div class="type-check"><input type="checkbox"></div></td> <td><a href="#">1025</a></td> <td>4 562</td> <td>Круглопузов Степан Петрович</td> <td>Москва</td> <td>Коммунситическая ул, д.78, кв 4</td> <td>Wi-Fi</td> <td>05.04.2001</td> <td>Саша</td> <td>Оплачен</td> <td><a href="#" class="print" title="Распечатать"></a> <a href="#" class="edit" title="Изменить заказ"></a></td>
+                  </tr>
+                  <tr class="even">
+                    <td><div class="type-check"><input type="checkbox"></div></td> <td><a href="#">1025</a></td> <td>14 562</td> <td>Шмидт Штефан Сергеевич</td> <td>Москва</td> <td>Коммунситическая ул, д.78, кв 4</td> <td>Wi-Fi</td> <td>05.04.2001</td> <td>Антон</td> <td>Оплачен</td> <td><a href="#" class="print" title="Распечатать"></a> <a href="#" class="edit" title="Изменить заказ"></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>  
+            
+            
+            
+            
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
