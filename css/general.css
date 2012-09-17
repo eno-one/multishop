@@ -8,6 +8,9 @@ p {
 img {
   border: none;
 }
+a{
+  color: #448CCB;
+}
 .fl-r{
   float: right;
 }

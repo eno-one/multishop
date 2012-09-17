@@ -12,6 +12,7 @@
 }
 .right-block{
   float: right;
+  margin-top: 3px;
 }
 .region,
 .region li,

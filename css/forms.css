@@ -21,13 +21,13 @@
 .c62l, .c62r {width: 61.8%;}
 
 .row{
-  padding: 4px 0;
+/*  padding: 4px 0;*/
   overflow: hidden;
 }
 .type-text,
 .type-select,
 .type-check{
-  padding:3px 0.5em;  
+  padding:2px 0.5em 3px;  
 }
 .type-button {
   padding:0px 0.5em;  
@@ -83,4 +83,9 @@
 }
 .vertical.no-label{
   padding-top: 22px;
+}
+label{
+  font-size: 12px;
+  line-height: 14px;
+  color: #787878;
 }
