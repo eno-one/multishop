@@ -1,6 +1,8 @@
-
 table{
   width: 100%;
+}
+.general{
+  border-collapse: collapse;
 }
 .even td{
   background-color: #E2E2E2;
@@ -8,10 +10,16 @@ table{
 table a{
   text-decoration: underline;
 }
+.general a{
+}
+
 table td{
   border-top: 1px solid #c9c9c9;
   border-bottom: 2px solid #fff;
   background-color: #fff;
+}
+.general td{
+/*  border: none;*/
 }
 thead th{
   color: #fff;

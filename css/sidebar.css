@@ -1,8 +1,7 @@
 /*--- sidebar-inner ---*/
 .sidebar{
-  float: left;
+  vertical-align: top;
   width: 220px;
-  height: 100%;
   border-right: 1px solid #949597;
   background-color: #f4f4f4;
 }

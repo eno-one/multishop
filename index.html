@@ -25,25 +25,28 @@
 </head>
 
 <body>
-  <header>
-    <div class="right-block">
-      <ul class="region">
-        <li><a href="#moscow">Москва</a></li>
-        <li><a href="#piter">Санкт-Петербург</a></li>
-        <li><a href="#russia" class="active">Россия</a></li>
-      </ul>
-      <span class="border"></span>
-      <a href="#" class="name">Иванов Иван</a>
-      <span class="border"></span>
-      <a href="#" class="logout" title="Выйти"><img src="img/logout.png" width="15" height="15" alt="Выйти" /></a>
-    </div>  
-    <a class="logo" href="#">
-      <img src="img/logo.png" width="167" height="20" alt="Multishop" />
-    </a>
-    <div class="header-notification">Прозвоны <span>(45)</span></div>
-  </header>
-  <div class="middle">
-    <div class="sidebar">
+  <table class="general">
+    <tr>
+      <td colspan="2" class="header">
+          <div class="right-block">
+            <ul class="region">
+              <li><a href="#moscow">Москва</a></li>
+              <li><a href="#piter">Санкт-Петербург</a></li>
+              <li><a href="#russia" class="active">Россия</a></li>
+            </ul>
+            <span class="border"></span>
+            <a href="#" class="name">Иванов Иван</a>
+            <span class="border"></span>
+            <a href="#" class="logout" title="Выйти"><img src="img/logout.png" width="15" height="15" alt="Выйти" /></a>
+          </div>  
+          <a class="logo" href="#">
+            <img src="img/logo.png" width="167" height="20" alt="Multishop" />
+          </a>
+          <div class="header-notification">Прозвоны <span>(45)</span></div>
+      </td>
+    </tr>  
+    <tr>
+     <td class="sidebar">
       <div class="hide-block"></div>
       <div class="sidebar-inner">
           <div class="administrator category-wrapper"><a href='#' class="menu-category opened">Администратор</a></div>
@@ -86,8 +89,8 @@
             <li><a href="#">Контрагенты</a></li>
           </ul>
       </div>
-    </div>
-    <div class="container">
+    </td>
+    <td class="container">
       <div class="container-inner">
         <div class="direction">
           <div class="selection">
@@ -105,7 +108,7 @@
             <a href="#"><span>Передача товара</span></a>
             <span>Москва &rarr; Миша</span>
           </div>
-        </div>
+        </div> <!-- .direction -->
         <div class="content">
           <form class="general-form">
             <div class="filtration">
@@ -146,7 +149,7 @@
                   </dl>
                 </div>
               </div>  
-            </div>
+            </div> <!-- .filtration -->
             
             <div class="table-wrapper">
               <table class="stripped">
@@ -176,15 +179,12 @@
                   </tr>
                 </tbody>
               </table>
-            </div>  
-            
-            
-            
-            
+            </div>  <!-- .table-wrapper -->
           </form>
-        </div>
-      </div>
-    </div>
-  </div>
+        </div> <!-- .content -->
+    </div> <!-- .container -->
+    </td>
+  </tr>    
+  </table>
 </body>
 </html>

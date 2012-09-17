@@ -1,8 +1,8 @@
 $(document).ready(function(){
-  windowHeight();
+  //windowHeight();
   
   $(window).resize(function(){
-    windowHeight();
+    //windowHeight();
   });
   $('.hide-block').bind('click', function(){
     hideSidebar();

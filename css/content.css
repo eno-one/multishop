@@ -1,11 +1,12 @@
 .container{
   background-color: #8c96a3;
-  height: 100%;
-  margin-left: 220px;
+  vertical-align: top;
+  border-left: 1px solid #949597;
 }
 .direction{
   border: 1px solid #999;
   border-top: none;
+  border-left: none;
   background: #ededed; /* for non-css3 browsers */ 
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#e3e3e3'); /* для IE6-9 */
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f7f7f7), to(#e3e3e3));

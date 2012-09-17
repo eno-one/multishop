@@ -1,6 +1,6 @@
 body {
   font: 13px/20px Verdana, sans-serif;
-  background-color: #8c96a3;
+  background: url('../img/bg.jpg') repeat-y 0 0 #8C96A3;
 }
 p {
   margin: 0 0 18px;
@@ -20,9 +20,10 @@ img {
   min-height: 100%;
   overflow: hidden;
   min-width: 960px;
-  /*
+  display: table-row;
+/* 
   background: url('../img/bg.jpg') repeat-y;
   background-position-x: 0;
   background-position-y: 0;
-  */
+ */
 }
