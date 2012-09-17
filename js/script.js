@@ -25,23 +25,24 @@ function hideSidebar(){
   var $left = $('.sidebar'),
       $right = $('.container');
 
-  if($left.hasClass('hidden')){
+  //if($left.hasClass('hidden')){
     $left.animate({
-        'margin-left': 0 + 'px'
+        'width': 0 + 'px'
       }, 200, function(){
-        $left.removeClass('hidden').addClass('visible');
-      }
+          $left.removeClass('hidden').addClass('visible');
+        }
     );
-    $right.animate({'margin-left': 220 + 'px'}, 200);
+  /*  $right.animate({'margin-left': 220 + 'px'}, 200);
   } else{
     $left.animate({
-        'margin-left': -217 + 'px'
+        'width': 0 + 'px'
       }, 200, function(){
         $left.removeClass('visible').addClass('hidden');
       }
     );
     $right.animate({'margin-left': 0 + 'px'}, 200); 
   }
+  */
 }   
 
 // определялка высоты окна

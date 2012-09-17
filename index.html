@@ -47,47 +47,48 @@
     </tr>  
     <tr>
      <td class="sidebar">
-      <div class="hide-block"></div>
+      
       <div class="sidebar-inner">
-          <div class="administrator category-wrapper"><a href='#' class="menu-category opened">Администратор</a></div>
-          <ul>
-            <li><a href="#" class="active">Заказы <span id="new-orders">(+5)</span></a></li>
-            <li><a href="#">Возвраты</a></li>
-            <li><a href="#">Склады</a></li>
-            <li><a href="#">Артикулы</a></li>
-          </ul>
-          <div class="moderator category-wrapper"><a href='#' class="menu-category opened">Руководитель</a></div>
-          <ul>
-            <li><a href="#">Отчёты</a></li>
-            <li><a href="#">Закупки</a></li>
-            <li><a href="#">Списания</a></li>
-            <li><a href="#">Расходы</a></li>
-            <li><a href="#">Финансы</a></li>
-            <li><a href="#">Пользователи</a></li>
-            <li><a href="#">Контрагенты</a></li>
-          </ul>
-          <div class="developer category-wrapper"><a href='#' class="menu-category opened">Разработчик</a></div>
-          <ul class="hidden">
-            <!-- тут пункты меню - заглушки -->
-            <li><a href="#">Отчёты</a></li>
-            <li><a href="#">Закупки</a></li>
-            <li><a href="#">Списания</a></li>
-            <li><a href="#">Расходы</a></li>
-            <li><a href="#">Финансы</a></li>
-            <li><a href="#">Пользователи</a></li>
-            <li><a href="#">Контрагенты</a></li>
-          </ul>
-					<div class="qqq category-wrapper"><a href='#' class="menu-category opened">Разработчик</a></div>
-          <ul class="hidden">
-            <!-- тут пункты меню - заглушки -->
-            <li><a href="#">Отчёты</a></li>
-            <li><a href="#">Закупки</a></li>
-            <li><a href="#">Списания</a></li>
-            <li><a href="#">Расходы</a></li>
-            <li><a href="#">Финансы</a></li>
-            <li><a href="#">Пользователи</a></li>
-            <li><a href="#">Контрагенты</a></li>
-          </ul>
+        <!--<div class="hide-block simple-button">&#9668;</div>-->
+        <div class="administrator category-wrapper"><a href='#' class="menu-category opened">Администратор</a></div>
+        <ul>
+          <li><a href="#" class="active">Заказы <span id="new-orders">(+5)</span></a></li>
+          <li><a href="#">Возвраты</a></li>
+          <li><a href="#">Склады</a></li>
+          <li><a href="#">Артикулы</a></li>
+        </ul>
+        <div class="moderator category-wrapper"><a href='#' class="menu-category opened">Руководитель</a></div>
+        <ul>
+          <li><a href="#">Отчёты</a></li>
+          <li><a href="#">Закупки</a></li>
+          <li><a href="#">Списания</a></li>
+          <li><a href="#">Расходы</a></li>
+          <li><a href="#">Финансы</a></li>
+          <li><a href="#">Пользователи</a></li>
+          <li><a href="#">Контрагенты</a></li>
+        </ul>
+        <div class="developer category-wrapper"><a href='#' class="menu-category opened">Разработчик</a></div>
+        <ul class="hidden">
+          <!-- тут пункты меню - заглушки -->
+          <li><a href="#">Отчёты</a></li>
+          <li><a href="#">Закупки</a></li>
+          <li><a href="#">Списания</a></li>
+          <li><a href="#">Расходы</a></li>
+          <li><a href="#">Финансы</a></li>
+          <li><a href="#">Пользователи</a></li>
+          <li><a href="#">Контрагенты</a></li>
+        </ul>
+        <div class="qqq category-wrapper"><a href='#' class="menu-category opened">Разработчик</a></div>
+        <ul class="hidden">
+          <!-- тут пункты меню - заглушки -->
+          <li><a href="#">Отчёты</a></li>
+          <li><a href="#">Закупки</a></li>
+          <li><a href="#">Списания</a></li>
+          <li><a href="#">Расходы</a></li>
+          <li><a href="#">Финансы</a></li>
+          <li><a href="#">Пользователи</a></li>
+          <li><a href="#">Контрагенты</a></li>
+        </ul>
       </div>
     </td>
     <td class="container">
@@ -178,8 +179,33 @@
                 </tr>
               </tbody>
             </table>
-          </form>
-        </div> <!-- .content -->
+            <div class="pagination-section">
+            
+            <dl class="horizontal">
+              <dd class="type-select">
+                <select id="count-of-output">
+                  <option>10</option>
+                  <option>20</option>
+                  <option>30</option>
+                  <option>40</option>
+                  <option>50</option>
+                  <option>100</option>
+                  <option>Все</option>
+                </select>
+              </dd>
+            </dl>  
+            <div class="border"></div>
+            <div class="shown">Показано: 1&ndash;20 из 25</div>
+            <div class="border"></div>
+            <div class="page-navi">
+              <a href="#" class="pre" title="На страницу назад"></a>
+              <dl class="horizontal"><dd class="type-text"><input type="text" value=""></dd></dl>
+              <a href="#" class="next" title="На страницу вперёд"></a>
+            </div>
+           
+          </div>
+        </form>
+      </div> <!-- .content -->
     </div> <!-- .container -->
     </td>
   </tr>    

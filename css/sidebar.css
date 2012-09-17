@@ -6,13 +6,10 @@
   background-color: #f4f4f4;
 }
 .hide-block{
-  background-color: #f1f1f1;
-  border-left: 1px solid #ccc;
-  cursor: pointer;
+  width: 20px;
+  height: 20px;
   display: block;
-  float: right;
-  height: 100%;
-  width: 3px; 
+  
 }
 .hide-block:hover{
   background-color: #fff;
