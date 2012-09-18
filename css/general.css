@@ -38,6 +38,7 @@ a{
   width: 100%;
   float: left;
   overflow: hidden;
+  position: relative;
 }
 .container-inner {
   padding: 0 0 0 220px;
