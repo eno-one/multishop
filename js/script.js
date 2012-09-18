@@ -28,43 +28,36 @@ function hideSidebar(){
       $right = $('.container-inner'),
       $background = $('.background'),
       $hint = $('.show-block-hint');
-/*
-  if($left.hasClass('hidden')){
-    $left.animate({
-        'margin-left': $left.css('margin-left') + 'px'
-      }, 200, function(){
-          $left.removeClass('hidden').addClass('visible');
-          $hint.hide();
-        }
-    );
-    $right.animate({'margin-left': 220 + 'px'}, 200);
-  } else{
-  */
+
   $left.animate({
-      'margin-left': '300px'//(parseInt($left.css('margin-left')) - parseInt($left.width())+5) + 'px'
+      'margin-left': (parseInt($left.css('margin-left')) - parseInt($left.width())) + 'px'
     }, 200, function(){
       $left.removeClass('visible').addClass('hidden');
       $hint.show();
     }
   );
-  $right.animate({'padding-left': 5 + 'px'}, 200); 
-  $background.animate({'margin-left': -215 + 'px'}, 200);
-  //}
+  $right.animate({'padding-left': 0 + 'px'}, 200); 
+  $background.animate({'margin-left': -220 + 'px'}, 200);
 }     
 
+// появлялка сайдбара
 function showSidebar(){
   var $left = $('.sidebar'),
       $right = $('.container-inner'),
       $background = $('.background'),
       $hint = $('.show-block-hint');
+      
+ // console.log(parseInt($left.css('margin-left')));    
+      
   $left.animate({
-    'margin-left': $left.css('margin-left') + 'px'
+    'margin-left': (parseInt($left.css('margin-left')) + parseInt($left.width())) + 'px'
   }, 200, function(){
       $left.removeClass('hidden').addClass('visible');
       $hint.hide();
     }
   );
-  $right.animate({'margin-left': 220 + 'px'}, 200);
+  $right.animate({'padding-left': 220 + 'px'}, 200);
+  $background.animate({'margin-left': 0 + 'px'}, 200);
 }
 
 function showSidebarHintAnimation(){
@@ -73,6 +66,6 @@ function showSidebarHintAnimation(){
     $(this).animate({'margin-left': 0 + 'px'}, 20);
   });
   $hint.mouseleave(function(){
-    $(this).animate({'margin-left': -20 + 'px'}, 20);
+    $(this).animate({'margin-left': -23 + 'px'}, 20);
   });
 }
