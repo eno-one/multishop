@@ -22,7 +22,7 @@ $(document).ready(function(){
 });
    
    
-// РїСЂСЏС‚Р°Р»РєР° СЃР°Р№РґР±Р°СЂР°  
+// пряталка сайдбара  
 function hideSidebar(){
   var $left = $('.sidebar'),
       $right = $('.container-inner'),
@@ -41,7 +41,7 @@ function hideSidebar(){
   } else{
   */
   $left.animate({
-      'margin-left': '300px'//(parseInt($left.css('margin-left')) - parseInt($left.width())+5) + 'px'
+      'margin-left': (parseInt($left.css('margin-left')) - parseInt($left.width())+5) + 'px'
     }, 200, function(){
       $left.removeClass('visible').addClass('hidden');
       $hint.show();
@@ -63,8 +63,8 @@ function showSidebar(){
       $left.removeClass('hidden').addClass('visible');
       $hint.hide();
     }
-  );
-  $right.animate({'margin-left': 220 + 'px'}, 200);
+);
+$right.animate({'margin-left': 220 + 'px'}, 200);
 }
 
 function showSidebarHintAnimation(){
