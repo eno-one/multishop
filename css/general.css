@@ -1,6 +1,6 @@
 body {
   font: 13px/20px Verdana, sans-serif;
-  background: url('../img/bg.jpg') repeat-y 0 0 #8C96A3;
+  background-color: #8C96A3;
 }
 p {
   margin: 0 0 18px;
@@ -17,16 +17,38 @@ a{
 .fl-l{
   float: left;
 }
-/* разметка */
+/* Middle
+-----------------------------------------------------------------------------*/
 .middle {
   width: 100%;
-  min-height: 100%;
+  position: relative;
+}
+/*
+.middle:after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+}
+*/
+.container {
+  width: 100%;
+  float: left;
   overflow: hidden;
-  min-width: 960px;
-  display: table-row;
-/* 
-  background: url('../img/bg.jpg') repeat-y;
-  background-position-x: 0;
-  background-position-y: 0;
- */
+}
+.container-inner {
+  padding: 0 0 0 220px;
+}
+.background{
+  background: url('../img/bg.jpg') repeat-y 0 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.content{
+  padding: 20px;
+  background-color: #F4F4F4;
+  border-left: 1px solid #949597;
 }

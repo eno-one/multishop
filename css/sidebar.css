@@ -1,21 +1,23 @@
-/*--- sidebar-inner ---*/
+/*--- sidebar-inner ---
 .sidebar{
   vertical-align: top;
   width: 220px;
   border-right: 1px solid #949597;
   background-color: #f4f4f4;
 }
-.hide-block{
-  width: 20px;
-  height: 20px;
-  display: block;
-  
+*/
+/* Sidebar Left
+-----------------------------------------------------------------------------*/
+.sidebar {
+  float: left;
+  width: 220px;
+  margin-left: -100%;
+  position: relative;
+  border-right: 1px solid #949597;
 }
-.hide-block:hover{
-  background-color: #fff;
-}
+
 .sidebar-inner {
-  padding: 18px 0 24px;
+  padding: 18px 0 1px;
   background: #F4F4F4;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0e0e0', endColorstr='#f4f4f4');
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e0e0e0), to(#f4f4f4));
