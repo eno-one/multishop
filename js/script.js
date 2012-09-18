@@ -2,7 +2,7 @@ $(document).ready(function(){
   
   showSidebarHintAnimation();
   
-  $('.hide-block').bind('click', function(){
+  $('.sidebar').bind('click', function(){
     hideSidebar();
   });
   
@@ -22,34 +22,38 @@ $(document).ready(function(){
 function hideSidebar(){
   var $left = $('.sidebar'),
       $right = $('.container-inner'),
-      $background = $('.background');
-
+      $background = $('.background'),
+      $hint = $('.show-block-hint');
+/*
   if($left.hasClass('hidden')){
     $left.animate({
         'margin-left': $left.css('margin-left') + 'px'
       }, 200, function(){
           $left.removeClass('hidden').addClass('visible');
+          $hint.hide();
         }
     );
     $right.animate({'margin-left': 220 + 'px'}, 200);
   } else{
-    $left.animate({
-        'margin-left': (parseInt($left.css('margin-left')) - parseInt($left.width())+5) + 'px'
-      }, 200, function(){
-        $left.removeClass('visible').addClass('hidden');
-      }
-    );
-    $right.animate({'padding-left': 5 + 'px'}, 200); 
-    $background.animate({'margin-left': -215 + 'px'}, 200);
-  }
+  */
+  $left.animate({
+      'margin-left': (parseInt($left.css('margin-left')) - parseInt($left.width())+5) + 'px'
+    }, 200, function(){
+      $left.removeClass('visible').addClass('hidden');
+      $hint.show();
+    }
+  );
+  $right.animate({'padding-left': 5 + 'px'}, 200); 
+  $background.animate({'margin-left': -215 + 'px'}, 200);
+  //}
 }     
 
 function showSidebarHintAnimation(){
   var $hint = $('.show-block-hint')
   $hint.mouseover(function(){
-    $(this).animate({'width': 50 + 'px'}, 20);
+    $(this).animate({'margin-left': 0 + 'px'}, 20);
   });
   $hint.mouseleave(function(){
-    $(this).animate({'width': 5 + 'px'}, 20);
+    $(this).animate({'margin-left': -20 + 'px'}, 20);
   });
 }
