@@ -1,4 +1,7 @@
 $(document).ready(function(){
+  
+  showSidebarHintAnimation();
+  
   $('.hide-block').bind('click', function(){
     hideSidebar();
   });
@@ -39,5 +42,14 @@ function hideSidebar(){
     $right.animate({'padding-left': 5 + 'px'}, 200); 
     $background.animate({'margin-left': -215 + 'px'}, 200);
   }
-  
 }     
+
+function showSidebarHintAnimation(){
+  var $hint = $('.show-block-hint')
+  $hint.mouseover(function(){
+    $(this).animate({'width': 50 + 'px'}, 20);
+  });
+  $hint.mouseleave(function(){
+    $(this).animate({'width': 5 + 'px'}, 20);
+  });
+}
