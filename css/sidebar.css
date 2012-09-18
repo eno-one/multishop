@@ -16,6 +16,9 @@
   border-right: 1px solid #949597;
 }
 
+.hidden{
+  display: none;
+}
 .sidebar-inner {
   padding: 18px 0 1px;
   background: #F4F4F4;
