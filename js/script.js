@@ -1,7 +1,10 @@
 $(document).ready(function(){
+  $(window).resize(function(){
+    sidebarPosition();
+  });
   
   showSidebarHintAnimation();
-  
+ 
   $('.hide-block').on('click', function(){
     hideSidebar();
   });
@@ -68,4 +71,10 @@ function showSidebarHintAnimation(){
   $hint.mouseleave(function(){
     $(this).animate({'margin-left': -23 + 'px'}, 20);
   });
+}
+
+function sidebarPosition(){
+  var marginLeft= $(window).width();
+  
+  $('.sidebar').css('margin-left', -marginLeft + 'px');
 }
