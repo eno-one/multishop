@@ -35,7 +35,6 @@ function hideSidebar(){
   $left.animate({
       'margin-left': (parseInt($left.css('margin-left')) - parseInt($left.width())) + 'px'
     }, 200, function(){
-      $left.removeClass('visible').addClass('hidden');
       $hint.show();
     }
   );
@@ -50,12 +49,9 @@ function showSidebar(){
       $background = $('.background'),
       $hint = $('.show-block-hint');
       
- // console.log(parseInt($left.css('margin-left')));    
-      
   $left.animate({
     'margin-left': (parseInt($left.css('margin-left')) + parseInt($left.width())) + 'px'
   }, 200, function(){
-      $left.removeClass('hidden').addClass('visible');
       $hint.hide();
     }
   );
