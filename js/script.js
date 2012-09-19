@@ -5,6 +5,8 @@ $(document).ready(function(){
   
   showSidebarHintAnimation();
  
+	var sidebarWidth = $('.sidebar').width();
+ 
   $('.hide-block').on('click', function(){
     hideSidebar();
   });
@@ -27,6 +29,7 @@ $(document).ready(function(){
    
 // пряталка сайдбара  
 function hideSidebar(){
+/*
   var $left = $('.sidebar'),
       $right = $('.container-inner'),
       $background = $('.background'),
@@ -40,10 +43,12 @@ function hideSidebar(){
   );
   $right.animate({'padding-left': 0 + 'px'}, 200); 
   $background.animate({'margin-left': -220 + 'px'}, 200);
+  */
 }     
 
 // появлялка сайдбара
 function showSidebar(){
+/*
   var $left = $('.sidebar'),
       $right = $('.container-inner'),
       $background = $('.background'),
@@ -57,6 +62,7 @@ function showSidebar(){
   );
   $right.animate({'padding-left': 220 + 'px'}, 200);
   $background.animate({'margin-left': 0 + 'px'}, 200);
+  */
 }
 
 function showSidebarHintAnimation(){
