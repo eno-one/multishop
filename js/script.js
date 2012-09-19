@@ -8,11 +8,11 @@ $(document).ready(function(){
 	var sidebarWidth = $('.sidebar').width();
  
   $('.hide-block').on('click', function(){
-    hideSidebar();
+    hideSidebar(sidebarWidth);
   });
   
   $('.show-block-hint').on('click', function(){
-    showSidebar();
+    showSidebar(sidebarWidth);
   })
   
   $('.menu-category').bind('click', function(){
@@ -28,26 +28,28 @@ $(document).ready(function(){
    
    
 // пряталка сайдбара  
-function hideSidebar(){
-/*
-  var $left = $('.sidebar'),
-      $right = $('.container-inner'),
-      $background = $('.background'),
-      $hint = $('.show-block-hint');
-
-  $left.animate({
-      'margin-left': (parseInt($left.css('margin-left')) - parseInt($left.width())) + 'px'
-    }, 200, function(){
-      $hint.show();
-    }
-  );
-  $right.animate({'padding-left': 0 + 'px'}, 200); 
-  $background.animate({'margin-left': -220 + 'px'}, 200);
-  */
+function hideSidebar(width){
+	$hint = $('.show-block-hint');
+	$('.middle').animate({
+					'margin-left': -width,
+					'width': ($(this).width() + width) + 'px'
+				}, 200, function(){
+					$hint.show();
+				}
+    );
 }     
 
 // появлялка сайдбара
-function showSidebar(){
+function showSidebar(width){
+	console.log(width);
+	$hint = $('.show-block-hint');
+	$('.middle').animate({
+					'margin-left': 0,
+					'width': $(this).width() + 'px'
+				}, 200, function(){
+      $hint.hide();
+    }
+  );
 /*
   var $left = $('.sidebar'),
       $right = $('.container-inner'),
