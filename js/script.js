@@ -1,19 +1,16 @@
 $(document).ready(function(){
-  sidebarHintAnimation();
-
-  tfootFix();
-  middleHeight();
+  sidebarHintAnimation(); // хинт сайдбара
+  tfootFix(); // фикс футера таблицы
+  middleHeight(); // эмуляция одинаковой высоты колонок
   
-  var sidebarWidth = $('.sidebar').width();
   $('.hide-block').on('click', function(){
-    hideSidebar(sidebarWidth);
+    hideSidebar();
   });
   
   $('.show-block-hint').on('click', function(){
-    showSidebar(sidebarWidth);
+    showSidebar();
   })
-  
-  
+
   $('.menu-category').on('click', function(){
     $(this).toggleClass('closed').toggleClass('opened');
     $(this).parent().next('ul').slideToggle(200);
@@ -25,20 +22,18 @@ $(document).ready(function(){
   });
   
   $(window).resize(function(){
-    console.log(123);
     tfootFix();
     middleHeight();
-
   });
 });
    
-   
 // пряталка сайдбара  
-function hideSidebar(width){
-	$hint = $('.show-block-hint');
+function hideSidebar(){
+	var $hint = $('.show-block-hint'),
+      sidebarWidth = $('.sidebar').width();
 	$('.middle').animate({
-                'margin-left': -width,
-                'width': ($(this).width() + width) + 'px'
+                'margin-left': -sidebarWidth,
+                'width': ($(this).width() + sidebarWidth) + 'px'
               }, 200, function(){
                         $hint.show();
                       }
@@ -46,8 +41,8 @@ function hideSidebar(width){
 }     
 
 // появлялка сайдбара
-function showSidebar(width){
-	$hint = $('.show-block-hint');
+function showSidebar(){
+	var $hint = $('.show-block-hint');
 	$('.middle').animate({
                 'margin-left': 0,
                 'width': $(this).width() + 'px'
@@ -89,4 +84,9 @@ function tfootFix(){
   } else {
     $table.css('margin-bottom', '0px');
   }
+}
+
+function tableWidth(){
+  var $middle = $('.middle');
+  $middle.css('width', '100%');
 }
