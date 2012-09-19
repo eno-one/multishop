@@ -1,7 +1,8 @@
 $(document).ready(function(){
-  showSidebarHintAnimation();
-  theadFix();
+  sidebarHintAnimation();
+
   tfootFix();
+  middleHeight();
   
   var sidebarWidth = $('.sidebar').width();
   $('.hide-block').on('click', function(){
@@ -21,6 +22,13 @@ $(document).ready(function(){
   
   $('.open-filtr').on('click', function(){
     $('.hidden-part').slideToggle(200);
+  });
+  
+  $(window).resize(function(){
+    console.log(123);
+    tfootFix();
+    middleHeight();
+
   });
 });
    
@@ -49,7 +57,7 @@ function showSidebar(width){
   );
 }
 
-function showSidebarHintAnimation(){
+function sidebarHintAnimation(){
   var $hint = $('.show-block-hint');
   $hint.mouseover(function(){
     $(this).animate({'margin-left': 0 + 'px'}, 20);
@@ -59,13 +67,15 @@ function showSidebarHintAnimation(){
   });
 }
 
-function theadFix(){
-  var $table = $('.general-form table'),
-      theadTop = $('.general-form table').offset().top; 
-  
-  $(window).scroll(function () {
+function middleHeight(){
+  var $middle = $('.middle'),
+      middleTop = $middle.offset().top,
+      middleBottom = middleTop + $middle.height(),
+      windowHeight = $(window).height();
 
-  });  
+  if (middleBottom < windowHeight){
+    $middle.css('height', (windowHeight - middleTop) + 'px');
+  }    
 }
 
 function tfootFix(){
@@ -73,10 +83,9 @@ function tfootFix(){
       $table = $('.with-fix'),
       tableBottom = $table.height() + $table.offset().top;
       $tfoot = $('.pagination-section'); 
-  //$('.pagination-section').css('position', 'fixed');  
+
   if(tableBottom > windowHeight){
-    //alert('yes');
-    $('.pagination-section').css('position', 'fixed');
+    $tfoot.css('position', 'fixed');
   } else {
     $table.css('margin-bottom', '0px');
   }
