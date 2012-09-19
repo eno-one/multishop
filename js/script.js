@@ -71,12 +71,12 @@ function theadFix(){
 function tfootFix(){
   var windowHeight = $(window).height(),
       $table = $('.with-fix'),
-      tableHeight = $table.height(),
-      $tfoot = $('.pagination-section');
-  alert('tableHeight = ' + tableHeight + ' ,' + 'windowHeight = ' + windowHeight);    
-  if(tableHeight > windowHeight){
-    alert('yes');
-    //$('.pagination-section').css('position', 'fixed');
+      tableBottom = $table.height() + $table.offset().top;
+      $tfoot = $('.pagination-section'); 
+  //$('.pagination-section').css('position', 'fixed');  
+  if(tableBottom > windowHeight){
+    //alert('yes');
+    $('.pagination-section').css('position', 'fixed');
   } else {
     $table.css('margin-bottom', '0px');
   }
