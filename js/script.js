@@ -1,8 +1,9 @@
 $(document).ready(function(){
   showSidebarHintAnimation();
- 
+  theadFix();
+  tfootFix();
+  
   var sidebarWidth = $('.sidebar').width();
- 
   $('.hide-block').on('click', function(){
     hideSidebar(sidebarWidth);
   });
@@ -10,6 +11,7 @@ $(document).ready(function(){
   $('.show-block-hint').on('click', function(){
     showSidebar(sidebarWidth);
   })
+  
   
   $('.menu-category').on('click', function(){
     $(this).toggleClass('closed').toggleClass('opened');
@@ -27,11 +29,11 @@ $(document).ready(function(){
 function hideSidebar(width){
 	$hint = $('.show-block-hint');
 	$('.middle').animate({
-					'margin-left': -width,
-					'width': ($(this).width() + width) + 'px'
-				}, 200, function(){
-							$hint.show();
-						}
+                'margin-left': -width,
+                'width': ($(this).width() + width) + 'px'
+              }, 200, function(){
+                        $hint.show();
+                      }
     );
 }     
 
@@ -39,11 +41,11 @@ function hideSidebar(width){
 function showSidebar(width){
 	$hint = $('.show-block-hint');
 	$('.middle').animate({
-					'margin-left': 0,
-					'width': $(this).width() + 'px'
-				}, 200, function(){
-						  $hint.hide();
-						}
+                'margin-left': 0,
+                'width': $(this).width() + 'px'
+              }, 200, function(){
+                        $hint.hide();
+                      }
   );
 }
 
@@ -55,4 +57,27 @@ function showSidebarHintAnimation(){
   $hint.mouseleave(function(){
     $(this).animate({'margin-left': -23 + 'px'}, 20);
   });
+}
+
+function theadFix(){
+  var $table = $('.general-form table'),
+      theadTop = $('.general-form table').offset().top; 
+  
+  $(window).scroll(function () {
+
+  });  
+}
+
+function tfootFix(){
+  var windowHeight = $(window).height(),
+      $table = $('.with-fix'),
+      tableHeight = $table.height(),
+      $tfoot = $('.pagination-section');
+  alert('tableHeight = ' + tableHeight + ' ,' + 'windowHeight = ' + windowHeight);    
+  if(tableHeight > windowHeight){
+    alert('yes');
+    //$('.pagination-section').css('position', 'fixed');
+  } else {
+    $table.css('margin-bottom', '0px');
+  }
 }
