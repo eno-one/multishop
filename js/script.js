@@ -1,6 +1,6 @@
 $(document).ready(function(){
   sidebarHintAnimation(); // хинт сайдбара
-  tfootFix(); // фикс футера таблицы
+ // tfootFix($('.with-fix')); // фикс футера таблицы
   middleHeight(); // эмуляция одинаковой высоты колонок
   
   $('.hide-block').on('click', function(){
@@ -73,9 +73,9 @@ function middleHeight(){
   }    
 }
 
-function tfootFix(){
+function tfootFix($table){
   var windowHeight = $(window).height(),
-      $table = $('.with-fix'),
+      //$table = $('.with-fix'),
       tableBottom = $table.height() + $table.offset().top;
       $tfoot = $('.pagination-section'); 
 
