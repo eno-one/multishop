@@ -214,11 +214,70 @@
                     <div class="type-radio"><input type="radio" id="master" name="master-order" checked><label for="master">Выезд мастера</label></div>
                     <div class="type-radio"><input type="radio" id="direct-order" name="master-order"><label for="direct-order">Прямой заказ</label></div>
                 </div>
-                
             </fieldset>
-            
+            <fieldset class='block-fieldset'>
+              <legend>Комментарии</legend>
+              <div class="row border-bottom">
+                <div class="comment"><a href="#">Антон</a> <span>(04/05/2011)</span> Перезвонить и договориться о монтаже</div>
+                <div class="comment"><a href="#">Евгений</a> <span>(04/05/2011)</span> Перезвонить и договориться о монтаже приехал и всё сделал</div>
+              </div>
+              <div class='row'>
+                <dl class='vertical'>
+                  <dt>Комментарии к доставке</dt>
+                  <dd class="type-text">
+                    <textarea></textarea>
+                  </dd>
+                </dl>
+              </div>        
+            </fieldset>
+            <fieldset class='block-fieldset'>
+              <legend>Распределение заказа</legend>
+              <div class='row border-bottom'>
+                <dl class="vertical c25l">
+                  <dt><label for="">Статус</label></dt>
+                  <dd class="type-select">
+                    <select>
+                      <option>132</option>
+                    </select>
+                  </dd>
+                </dl>
+                <dl class="vertical c25l">
+                  <dt><label for="">Склад</label></dt>
+                  <dd class="type-select">
+                    <select>
+                      <option>132</option>
+                    </select>
+                  </dd>
+                </dl>
+              </div>
+              <div class='row'>
+                <dl class="vertical c25l">
+                  <dt><label for="">Статус</label></dt>
+                  <dd class="type-select">
+                    <select>
+                      <option>132</option>
+                    </select>
+                  </dd>
+                </dl>
+                <dl class="vertical c25l">
+                  <dt><label for="">Дата</label></dt>
+                  <dd class="type-text">
+                    <input type="text" class='date'>
+                  </dd>
+                </dl>
+              </div>
+            </fieldset>
+            <div class="pagination-section button-group">
+              <div class="c50l">
+                <input id="edit-submit-changes" class="blue-button" type="submit" value="Сохранить изменения" name="op">
+              </div>
+              <div class="c50l right">
+                <input id="edit-delete" class="gray-button" type="submit" value="Удалить" name="op">
+              </div>
+            </div>
           </form>
-        </div>    
+          
+        </div> <!-- .content -->   
       </div><!-- .container-inner-->
     </div><!-- .container-->
 
