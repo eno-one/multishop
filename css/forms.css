@@ -89,3 +89,20 @@ label{
   line-height: 14px;
   color: #787878;
 }
+
+.block-fieldset{
+
+}
+.block-fieldset > legend{
+  display: block;
+  width: 132px;
+  float: left;
+}
+.block-fieldset > .row{
+  margin-left: 132px;
+  padding: 10px;
+  border-left: 1px solid #C2C2C2;
+}
+.row.border-bottom{
+  border-bottom: 1px solid #C2C2C2;
+}
