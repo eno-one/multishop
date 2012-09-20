@@ -166,7 +166,57 @@
                   </dd>
                 </dl>
               </div>
+              <div class='row'>
+                <dl class='vertical'>
+                  <dt>Комментарии к доставке</dt>
+                  <dd class="type-text">
+                    <textarea></textarea>
+                  </dd>
+                </dl>
+              </div>
             </fieldset>
+            <fieldset class='block-fieldset'>
+              <legend>Формирование заказа</legend>
+              <div class='row'>
+                <div class="fl-r"><a href="#" class="default-button">Добавить строку</a></div>
+                <dl class='horizontal c25l'>
+                  <dd class="type-text">
+                    <input type="text" placeholder='Поиск товара по названию'>
+                  </dd>
+                </dl>
+              </div>
+              <div class='row table-wrapper'>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Артикул</th> <th>Наименование&nbsp;товара</th> <th class="narrow">Цена</th> <th class="narrow">Бонус</th> <th class="narrow">Кол‑во</th> <th class="narrow">Сумма</th> <th class="narrow">&sum;&nbsp;бонусов</th> <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="">
+                      <td><a href="#">2587</a></td> <td><div class="type-text"><input type="text"></div></td> <td><div class="type-text"><input type="text"></div></td> <td><div class="type-text"><input type="text"></div></td> <td><div class="type-text"><input type="text"></div></td> <td>12 222</td> <td>11 222</td> <td><a href="#" class="delete" title="Удалить">&nbsp;</a></td>
+                    </tr>
+                   
+                    <tr class="type-of-delivery">
+                      <td colspan="2"><div class="type-check"><input type="checkbox" id="delivery"><label for="delivery">Доставка курьером</label></div></td> <td><div class="type-text"><input type="text"></div></td> <td><div class="type-text"><input type="text"></div></td> <td colspan="4">&nbsp;</td>
+                    </tr>
+                    <tr class="itogo">
+                      <td colspan="5">Итого:</td> <td>12 222</td> <td>11 222</td> <td>&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+                <div class='row'>
+                    <div class="type-text fl-r">
+                      <label for="profit-reduction">Уменьшение&nbsp;прибыли</label>
+                      <input type="text" name="profit-reduction">
+                    </div>
+                    <div class="type-radio"><input type="radio" id="master" name="master-order" checked><label for="master">Выезд мастера</label></div>
+                    <div class="type-radio"><input type="radio" id="direct-order" name="master-order"><label for="direct-order">Прямой заказ</label></div>
+                </div>
+                
+            </fieldset>
+            
           </form>
         </div>    
       </div><!-- .container-inner-->

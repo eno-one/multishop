@@ -83,7 +83,7 @@
   float: left;
 }
 .selection a,
-.simple-button{
+.default-button{
   text-decoration: none;
   border: 1px solid #999;
   color: #2E2E2E;
@@ -101,18 +101,18 @@
 .selection a:hover{
    color: #448ccb;
 }
-.simple-button:hover{
+.default-button:hover{
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c8c8c8', endColorstr='#fdfdfd');
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c8c8c8), to(#fdfdfd));
     background: -moz-linear-gradient(top,  #c8c8c8,  #fdfdfd);
     background: -o-linear-gradient(top,  #c8c8c8,  #fdfdfd);
     background: -ms-linear-gradient(top,  #c8c8c8,  #fdfdfd); 
 }
-.simple-button {
+.default-button {
   vertical-align: top;
   border-radius: 3px;
 }    
-.simple-button span {
+.default-button span {
   display: block;
   height: 17px;
   width: 13px;

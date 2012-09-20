@@ -21,9 +21,9 @@
 .c62l, .c62r {width: 61.8%;}
 
 .row{
-/*  padding: 4px 0;*/
   overflow: hidden;
 }
+
 .type-text,
 .type-select,
 .type-check{
@@ -107,11 +107,14 @@ label{
   display: block;
   width: 132px;
   float: left;
-}
+} 
 .block-fieldset > .row{
   margin-left: 132px;
   padding: 10px;
   border-left: 1px solid #C2C2C2;
+}
+.row.table-wrapper{
+  padding: 0;
 }
 .row.border-bottom{
   border-bottom: 1px solid #C2C2C2;
