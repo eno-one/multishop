@@ -89,12 +89,10 @@ label{
   line-height: 14px;
   color: #787878;
 }
-
 .block-fieldset{
   border-bottom: 1px solid #999;
   border-top: 1px solid #fff;
   padding: 7px 0;
-  
   background: #fbfbfb;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#fff');
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ededed), to(#fff));
@@ -102,11 +100,12 @@ label{
     background: -o-linear-gradient(top,  #ededed,  #fff);
     background: -ms-linear-gradient(top,  #ededed,  #fff);
 }
-
 .block-fieldset > legend{
   display: block;
   width: 132px;
   float: left;
+  text-align: center;
+  padding-top: 18px;
 } 
 .block-fieldset > .row{
   margin-left: 132px;
@@ -125,6 +124,31 @@ label{
 .date, .date:hover, .date:active, .date:focus {
     background: url("/sites/all/themes/Adminus/img/calendar.png") no-repeat scroll 95% 50% #FFFFFF !important;
 }
+.item1,
+.item2,
+.item3,
+.item4,
+.item5{
+  font-size: 14px;
+  line-height: 18px;
+}
+.item1{
+  color: #448CCB;
+}
+.item2{
+  color: #675F8A;
+}
+.item3{
+  color: #7EB632;
+}
+.item4{
+  color: #F7A930;
+}
+.item5{
+  color: #BD62A3;
+}
+
+
 
 /* buttons */
 .button-group .right{
