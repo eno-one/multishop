@@ -118,9 +118,6 @@ label{
 .row.border-bottom{
   border-bottom: 1px solid #C2C2C2;
 }
-.block-fieldset .comment {
-    margin: 0 0 7px;
-}
 .date, .date:hover, .date:active, .date:focus {
     background: url("/sites/all/themes/Adminus/img/calendar.png") no-repeat scroll 95% 50% #FFFFFF !important;
 }

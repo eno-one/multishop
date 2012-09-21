@@ -189,22 +189,64 @@
                 <table>
                   <thead>
                     <tr>
-                      <th>Артикул</th> <th>Наименование&nbsp;товара</th> <th class="narrow">Цена</th> <th class="narrow">Бонус</th> <th class="narrow">Кол‑во</th> <th class="narrow">Сумма</th> <th class="narrow">&sum;&nbsp;бонусов</th> <th></th>
+                      <th class="col-article">Артикул</th>
+                      <th colspan="2" class="col-product">Товар</th>
+                      <th class="col-qty">Кол-во</th>
+                      <th class="col-price">Цена</th>
+                      <th class="col-cost">Стоимость</th>
+                      <th class="col-price">Итого</th>
+                      <th width="30">&nbsp;</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr class="">
-                      <td><a href="#">2587</a></td> <td><div class="type-text"><input type="text"></div></td> <td><div class="type-text"><input type="text"></div></td> <td><div class="type-text"><input type="text"></div></td> <td><div class="type-text"><input type="text"></div></td> <td>12 222</td> <td>11 222</td> <td><a href="#" class="delete" title="Удалить">&nbsp;</a></td>
-                    </tr>
-                   
-                    <tr class="type-of-delivery">
-                      <td colspan="2"><div class="type-check"><input type="checkbox" id="delivery"><label for="delivery">Доставка курьером</label></div></td> <td><div class="type-text"><input type="text"></div></td> <td><div class="type-text"><input type="text"></div></td> <td colspan="4">&nbsp;</td>
-                    </tr>
-                    <tr class="itogo">
-                      <td colspan="5">Итого:</td> <td>12 222</td> <td>11 222</td> <td>&nbsp;</td>
+                    <tr>
+                      <td class="sku"><a href="#">223</a></td>
+                      <td>
+                        <dl class='horizontal'>
+                          <dd class='type-text'>
+                            <input type="text" value="Барный стул BST-9456">
+                          </dd>
+                        </dl>
+                      </td>
+                      <td></td>
+                      <td>
+                        <dl class='horizontal'>
+                          <dd class='type-text'>
+                            <input type="text">
+                          </dd>
+                        </dl>
+                      </td>
+                      <td class="i-price">
+                        <dl class='horizontal'>
+                          <dd class='type-text'>
+                            <input type="text">
+                          </dd>
+                        </dl>
+                      </td>
+                      <td class="i-price">
+                        <dl class='horizontal'>
+                          <dd class='type-text'>
+                            <input type="text">
+                          </dd>
+                        </dl>
+                      </td>
+                      <td class="price t-price">15 000.00</td>
+                      <td class="links">
+                        <a class="remove" href="#remove">
+                        <img height="16" width="16" title="" alt="Delte" src="/sites/all/modules/custom/emfy_store/emfy_orders/images/delete.png">    </a>
+                      </td>
                     </tr>
                   </tbody>
-                </table>
+                  <tfoot>
+                   <tr class="type-of-delivery odd" id="delivery-cost"><td class="sku"><div id="edit-delivery-courier-wrapper" class="type-check">
+                   <input type="checkbox" class="form-checkbox delivery-processed" value="1" id="edit-delivery-courier" name="delivery_courier">
+                  </div>
+                  </td><td colspan="3">Delivery by courier</td><td class="t-price"> <input type="text" disabled="disabled" class="form-text price t-price" value="0" size="12" id="edit-delivery-price" name="delivery_price" maxlength="12">
+                  </td><td class="t-price"> <input type="text" disabled="disabled" class="form-text price t:price" value="0" size="12" id="edit-delivery-cost" name="delivery_cost" maxlength="12">
+                  </td><td colspan="2">&nbsp;</td> </tr>
+                   <tr class="itogo even"><td colspan="6">Итого</td><td class="price t-pcost">15 000.00</td><td>&nbsp;</td> </tr>
+                  </tfoot>
+                  </table>
                 </div>
                 <div class='row'>
                     <div class="type-text fl-r">
