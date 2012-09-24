@@ -104,18 +104,14 @@ table .type-check{
 }
 .col-qty {
     text-align: center;
-    width: 5%;
+    width: 10%;
     white-space: nowrap;
 }
 .col-price {
     text-align: right;
-    width: 7%;
+    width: 10%;
 }
 .col-cost {
     text-align: right;
-    width: 7%;
-}
-.col-price {
-    text-align: right;
-    width: 8%;
+    width: 10%;
 }

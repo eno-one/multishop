@@ -179,7 +179,7 @@
               <legend class='item3'><img src='img/icon-order-forming.png' width='29' height='30' alt='' /> <br>Формирование заказа</legend>
               <div class='row'>
                 <div class="fl-r"><a href="#" class="default-button">Добавить строку</a></div>
-                <dl class='horizontal c25l'>
+                <dl class='horizontal c55l'>
                   <dd class="type-text">
                     <input type="text" placeholder='Поиск товара по названию'>
                   </dd>
@@ -190,7 +190,7 @@
                   <thead>
                     <tr>
                       <th class="col-article">Артикул</th>
-                      <th colspan="2" class="col-product">Товар</th>
+                      <th class="col-product">Товар</th>
                       <th class="col-qty">Кол-во</th>
                       <th class="col-price">Цена</th>
                       <th class="col-cost">Стоимость</th>
@@ -200,61 +200,105 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="sku"><a href="#">223</a></td>
+                      <td class="text-center">
+                        <a href="#">223</a>
+                      </td> 
                       <td>
                         <dl class='horizontal'>
                           <dd class='type-text'>
                             <input type="text" value="Барный стул BST-9456">
                           </dd>
                         </dl>
-                      </td>
-                      <td></td>
+                      </td> 
                       <td>
                         <dl class='horizontal'>
                           <dd class='type-text'>
                             <input type="text">
                           </dd>
                         </dl>
-                      </td>
-                      <td class="i-price">
+                      </td> 
+                      <td>
                         <dl class='horizontal'>
                           <dd class='type-text'>
                             <input type="text">
                           </dd>
                         </dl>
-                      </td>
-                      <td class="i-price">
+                      </td> 
+                      <td>
                         <dl class='horizontal'>
                           <dd class='type-text'>
                             <input type="text">
                           </dd>
                         </dl>
-                      </td>
-                      <td class="price t-price">15 000.00</td>
-                      <td class="links">
+                      </td> 
+                      <td>
+                        15 000.00
+                      </td> 
+                      <td>
                         <a class="remove" href="#remove">
-                        <img height="16" width="16" title="" alt="Delte" src="/sites/all/modules/custom/emfy_store/emfy_orders/images/delete.png">    </a>
-                      </td>
-                    </tr>
+                          <img height="16" width="16" title="" alt="Delte" src="/sites/all/modules/custom/emfy_store/emfy_orders/images/delete.png"> 
+                        </a>
+                        </dl>
+                      </td> 
+                    </tr>  
+                  
                   </tbody>
                   <tfoot>
-                   <tr class="type-of-delivery odd" id="delivery-cost"><td class="sku"><div id="edit-delivery-courier-wrapper" class="type-check">
-                   <input type="checkbox" class="form-checkbox delivery-processed" value="1" id="edit-delivery-courier" name="delivery_courier">
-                  </div>
-                  </td><td colspan="3">Delivery by courier</td><td class="t-price"> <input type="text" disabled="disabled" class="form-text price t-price" value="0" size="12" id="edit-delivery-price" name="delivery_price" maxlength="12">
-                  </td><td class="t-price"> <input type="text" disabled="disabled" class="form-text price t:price" value="0" size="12" id="edit-delivery-cost" name="delivery_cost" maxlength="12">
-                  </td><td colspan="2">&nbsp;</td> </tr>
-                   <tr class="itogo even"><td colspan="6">Итого</td><td class="price t-pcost">15 000.00</td><td>&nbsp;</td> </tr>
+                    <tr>
+                      <td class="text-center">
+                        <dl class="vertical">
+                          <dt class="type-check"><input type="checkbox" id="curier"></dt>
+                        </dl>
+                      </td> 
+                      <td>
+                        <dl class="horizontal">
+                          <dl><label for="curier">Доставка курьером</label></dl>
+                        </dl>
+                      </td> 
+                      <td>
+                        <dl class='horizontal'>
+                          <dd class='type-text'>
+                            <input type="text">
+                          </dd>
+                        </dl>
+                      </td> 
+                      <td>
+                        <dl class='horizontal'>
+                          <dd class='type-text'>
+                            <input type="text">
+                          </dd>
+                        </dl>
+                      </td> 
+                      <td colspan="3">
+                        &nbsp;
+                      </td> 
+                    </tr>  
+                    <tr class="itogo">
+                      <td colspan="5">Итого:</td>
+                      <td>
+                        15 000.00 
+                      </td>
+                      <td>
+                        &nbsp;
+                      </td>
+                    </tr>
                   </tfoot>
                   </table>
                 </div>
                 <div class='row'>
-                    <div class="type-text fl-r">
-                      <label for="profit-reduction">Уменьшение&nbsp;прибыли</label>
-                      <input type="text" name="profit-reduction">
-                    </div>
-                    <div class="type-radio"><input type="radio" id="master" name="master-order" checked><label for="master">Выезд мастера</label></div>
-                    <div class="type-radio"><input type="radio" id="direct-order" name="master-order"><label for="direct-order">Прямой заказ</label></div>
+                  <dl class="horizontal type-text fl-r">
+                    <dt><label>Уменьшение прибыли</label></dt>
+                    <dd><input type="text"></dd>
+                  </dl>
+                  <dl class="horizontal type-radio fl-l">
+                    <dt><input type="radio"></dt>
+                    <dd><label for="master">Выезд мастера</label></dd>
+                  </dl>
+                  <dl class="horizontal type-radio fl-l">
+                    <dt><input type="radio"></dt>
+                    <dd><label for="master">Прямой выезд</label></dd>
+                  </dl>
+                  
                 </div>
             </fieldset>
             <fieldset class='block-fieldset'>

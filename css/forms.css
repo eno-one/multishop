@@ -1,4 +1,4 @@
-.c15l, .c17l, .c20l, .c25l, .c30l, .c33l, .c40l, .c38l, .c50l, .c60l, .c62l, .c66l, .c75l, .c80l {
+.c15l, .c17l, .c20l, .c25l, .c30l, .c33l, .c40l, .c38l, .c50l, .c55l, .c60l, .c62l, .c66l, .c75l, .c80l {
   float: left;
 }
 .c15r, .c15r, .c20r, .c25r, .c30r, .c33r, .c40r, .c38r, .c50r, .c60r, .c66r, .c62r, .c75r, .c80r {
@@ -9,6 +9,7 @@
 .c17l, .c17r {width: 17%;}
 .c20l, .c20r {width: 20%;}
 .c40l, .c40r {width: 40%;}
+.c55l, .c55r {width: 55%;}
 .c60l, .c60r {width: 60%;}
 .c80l, .c80r {width: 80%;}
 .c25l, .c25r {width: 25%;}
@@ -72,7 +73,16 @@
   cursor: pointer; 
   margin-right: 7px;
 }
-
+.type-radio dd, 
+.type-check dd{
+  margin-left: 25px;
+}
+dl{
+  white-space: nowrap;
+}
+.horizontal{
+/*  overflow: hidden;*/
+}
 .horizontal dt{
   float: left;
   color: #666;
@@ -217,6 +227,7 @@ a.default-button{
 .default-button {
   vertical-align: top;
   border-radius: 3px;
+  color: #000;
 }    
 .default-button span {
   display: block;
