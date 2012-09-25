@@ -25,9 +25,9 @@
   overflow: hidden;
 }
 
-.type-text,
-.type-select,
-.type-check{
+.type-text dd,
+.type-select dd,
+.type-check dd{
   padding:2px 0.5em 3px;  
 }
 .type-button {
@@ -43,6 +43,9 @@
   margin-right: -3px;
   border-radius: 2px;
   border: 1px solid #afafaf;
+}
+.type-text textarea{
+  width: 91%;
 }
 .type-text input{
   height: 19px;
@@ -63,7 +66,8 @@
   display:block;
   position:relative;
   padding:0em 0px 0em 1px;
-  width:101%;
+/*  width:101%;*/
+  width: 98%;
   margin-right: -3px; 
   cursor:pointer;
   height: 21px;
@@ -81,7 +85,7 @@ dl{
   white-space: nowrap;
 }
 .horizontal{
-/*  overflow: hidden;*/
+
 }
 .horizontal dt{
   float: left;
@@ -89,6 +93,7 @@ dl{
 }
 .vertical dt{
   color: #666;
+  line-height: 16px;
   padding:0px 0.5em;
 }
 .vertical.no-label{
