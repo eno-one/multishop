@@ -91,7 +91,7 @@ table .type-check{
   padding: 0;
 }
 .with-fix{
-  margin-bottom: 37px;
+/*  margin-bottom: 37px;*/
 }
 .itogo td,
 .itogo:hover  td{
@@ -114,4 +114,50 @@ table .type-check{
 .col-cost {
     text-align: right;
     width: 10%;
+}
+
+.triggered .child{
+  display: none;
+}
+.triggered .parent td{
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #fff;
+  
+  background: #dfe1e4;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ecedef', endColorstr='#d4d6da');
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ecedef), to(#d4d6da));
+    background: -moz-linear-gradient(top,  #ecedef, #d4d6da); 
+    background: -o-linear-gradient(top,  #ecedef, #d4d6da);
+    background: -ms-linear-gradient(top,  #ecedef, #d4d6da);
+}
+.triggered .parent a{
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  text-shadow: 0px 1px 1px #fff; 
+}
+.categ-opened,
+.categ-opened:hover{
+  color: #494949 !important;
+}
+
+.triggered tbody .sliding{
+  background: url('../img/rows.png') no-repeat 0 0px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 14px;
+}
+.triggered .sliding:hover{
+  text-decoration: none;
+}
+.triggered thead th:first-child{
+  width: 17px;
+}
+
+.triggered tbody td:first-child{
+  padding: 8px 14px;
+}
+.triggered tbody .closed-sign{
+  background-position: 0 -14px;
 }

@@ -25,6 +25,38 @@ $(document).ready(function(){
     tfootFix();
     middleHeight();
   });
+  
+    /*--- sliding в журнале ---*/
+  
+  $('.sliding').click(function(){
+
+    var $parent=$(this).parents('tr');
+    var id= $parent.attr('id');
+   
+    $(this).toggleClass('closed-sign');
+//    $parent.toggleClass('opened');
+    $('.dropped-down-table tbody .sliding').toggleClass('closed-sign');
+    $('.parent-'+id).slideToggle(200);
+    return false;
+  });
+  
+  $('.dropped-down-table thead .sliding').click(function(){
+    $('.dropped-down-table .child').slideToggle();
+    
+    return false;
+  });
+  
+  $('.dropped-down-table .parent').click(function(){
+    var id= $(this).attr('id');
+    $('.parent-'+id).slideToggle(200);
+    $(this).find('.sliding').toggleClass('closed-sign');
+    $(this).find('.category-name').toggleClass('categ-opened')
+    return false;
+  });
+  
+  
+  
+  
 });
    
 // пряталка сайдбара  
