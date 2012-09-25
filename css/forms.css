@@ -1,38 +1,43 @@
-  .w25{
-    float: left;
+.w25l, .w33l, .w50l, .w66l, .w75l{
+  float: left;
+  margin-right: 2%;
+}  
+.w25l{
     width: 23%;
-    margin-right: 2%;
   }
-  .w33{
-    float: left;
+  .w33l{
     width: 31%;
-    margin-right: 2%;
   }
-  .w50{
-    float: left;
+  .w50l{
     width: 48%;
-    margin-right: 2%;
   }
-  .w66{
-    float: left;
+  .w66l{
     width: 64%;
-    margin-right: 2%;
   }
-  .w75{
-    float: left;
+  .w75l{
     width: 73%;
-    margin-right: 2%;
   }
   .type-text input{
     width: 100%;
+    border-radius: 2px;
+    border: 1px solid #afafaf;
   }
   .type-select select{
     width: 100%;
+    border-radius: 2px;
+    border: 1px solid #afafaf;
   }
   dd{
     margin: 0;
   }
-
+  .row{
+    overflow: hidden;
+  }
+  .form-description{
+    color: #888;
+    font-size: 11px;
+    
+  }
 /*
 .c15l, .c17l, .c20l, .c25l, .c30l, .c33l, .c40l, .c38l, .c50l, .c55l, .c60l, .c62l, .c66l, .c75l, .c80l {
   float: left;
