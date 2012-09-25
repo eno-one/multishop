@@ -12,7 +12,9 @@ img {
 a{
   color: #448CCB;
 }
-
+.inline-block{
+  display: inline-block;
+}
 /* Middle
 -----------------------------------------------------------------------------*/
 .middle {
