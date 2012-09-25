@@ -1,3 +1,39 @@
+  .w25{
+    float: left;
+    width: 23%;
+    margin-right: 2%;
+  }
+  .w33{
+    float: left;
+    width: 31%;
+    margin-right: 2%;
+  }
+  .w50{
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+  }
+  .w66{
+    float: left;
+    width: 64%;
+    margin-right: 2%;
+  }
+  .w75{
+    float: left;
+    width: 73%;
+    margin-right: 2%;
+  }
+  .type-text input{
+    width: 100%;
+  }
+  .type-select select{
+    width: 100%;
+  }
+  dd{
+    margin: 0;
+  }
+
+/*
 .c15l, .c17l, .c20l, .c25l, .c30l, .c33l, .c40l, .c38l, .c50l, .c55l, .c60l, .c62l, .c66l, .c75l, .c80l {
   float: left;
 }
@@ -66,7 +102,6 @@
   display:block;
   position:relative;
   padding:0em 0px 0em 1px;
-/*  width:101%;*/
   width: 98%;
   margin-right: -3px; 
   cursor:pointer;
@@ -99,6 +134,7 @@ dl{
 .vertical.no-label{
   padding-top: 22px;
 }
+*/
 label{
   font-size: 12px;
   line-height: 14px;
@@ -115,6 +151,7 @@ label{
     background: -o-linear-gradient(top,  #ededed,  #fff);
     background: -ms-linear-gradient(top,  #ededed,  #fff);
 }
+
 .block-fieldset > legend{
   display: block;
   width: 132px;
