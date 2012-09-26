@@ -1,7 +1,12 @@
+html{
+  background-color: #8C96A3;
+}
+
 body {
   font: 13px/20px Verdana, sans-serif;
   background-color: #8C96A3;
   min-height: 100%;
+  max-width: 1500px;
 }
 p {
   margin: 0 0 18px;
@@ -20,7 +25,6 @@ a{
 .middle {
   width: 100%;
   min-width: 940px;
-  max-width: 1500px;
   position: relative;
   overflow: hidden;
   background: url('../img/bg.jpg') repeat-y 0 0;
