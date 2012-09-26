@@ -19,6 +19,8 @@ a{
 -----------------------------------------------------------------------------*/
 .middle {
   width: 100%;
+  min-width: 940px;
+  max-width: 1500px;
   position: relative;
   overflow: hidden;
   background: url('../img/bg.jpg') repeat-y 0 0;
