@@ -22,10 +22,15 @@ $(document).ready(function(){
     $('.hidden-part').slideToggle(200);
   });
   
+  var temp;
+  
   $(window).resize(function(){
-    tfootFix();
+    //tfootFix();
     middleHeight();
+    middleResize();
   });
+  
+  
   
     /*--- sliding в журнале ---*/
   
@@ -59,6 +64,7 @@ $(document).ready(function(){
 // пряталка сайдбара  
 function hideSidebar(){
 	var $hint = $('.show-block-hint'),
+      $left = $('.sidebar'),
       sidebarWidth = $('.sidebar').width(),
       middleWidth = middleWidthDetect();
 
@@ -66,25 +72,25 @@ function hideSidebar(){
                 'margin-left': -sidebarWidth,
                 'width': (middleWidth + sidebarWidth) + 'px'
               }, 200, function(){
+                        $left.removeClass('visible');
+                        
                         $hint.show();
                       }
     );
-  
 }     
 
 // появлялка сайдбара
 function showSidebar(){
 	var $hint = $('.show-block-hint'),
+  $left = $('.sidebar'),
   sidebarWidth = $('.sidebar').width(),
   middleWidth = middleWidthDetect();
-  
-  console.log(sidebarWidth);
-  console.log(middleWidth);
   
 	$('.middle').animate({
                 'margin-left': 0,
                 'width': (middleWidth - sidebarWidth) + 'px'
               }, 200, function(){
+                        $left.addClass('visible');
                         $hint.hide();
                       }
   );
@@ -92,6 +98,15 @@ function showSidebar(){
 
 function middleWidthDetect(){
   return $('.middle').width();
+}
+
+function middleResize(){
+  if($('.sidebar').hasClass('visible')){
+    $('.middle').css('width', $('body').width() - $('.sidebar').width() + 'px');
+  } else{
+    $('.middle').css('width', $('body').width() + 'px');
+  }
+  
 }
 
 function sidebarHintAnimation(){
