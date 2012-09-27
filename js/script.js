@@ -21,11 +21,12 @@ $(document).ready(function(){
     $('.hidden-part').slideToggle(200);
   });
   
-  var temp;
+  bottomFix();
   
   $(window).resize(function(){
     middleHeight();
     middleResize();
+    bottomFix();
   });
   
   
@@ -64,17 +65,21 @@ function hideSidebar(){
 	var $hint = $('.show-block-hint'),
       $left = $('.sidebar'),
       sidebarWidth = $('.sidebar').width(),
-      middleWidth = middleWidthDetect();
+      middleWidth = middleWidthDetect(),
+      contentInnerWidth = $('.container-inner').width();
 
 	$('.middle').animate({
                 'margin-left': -sidebarWidth,
                 'width': (middleWidth + sidebarWidth) + 'px'
               }, 200, function(){
                         $left.removeClass('visible');
-                        
                         $hint.show();
                       }
     );
+      
+    $('.pagination-section').animate({
+                'width': (contentInnerWidth + sidebarWidth) + 'px'
+              }, 200);  
 }     
 
 // появлялка сайдбара
@@ -82,7 +87,8 @@ function showSidebar(){
 	var $hint = $('.show-block-hint'),
   $left = $('.sidebar'),
   sidebarWidth = $('.sidebar').width(),
-  middleWidth = middleWidthDetect();
+  middleWidth = middleWidthDetect(),
+  contentInnerWidth = $('.container-inner').width();
   
 	$('.middle').animate({
                 'margin-left': 0,
@@ -92,6 +98,10 @@ function showSidebar(){
                         $hint.hide();
                       }
   );
+    
+  $('.pagination-section').animate({
+                'width': (contentInnerWidth - sidebarWidth) + 'px'
+              }, 200);      
 }
 
 function middleWidthDetect(){
@@ -102,10 +112,18 @@ function middleResize(){
   if($('.sidebar').hasClass('visible')){
     $('.middle').css('width', $('body').width() + 'px');
   } else{
-    console.log(132);
-    $('.middle').css('width', $('body').width() - $('.sidebar').width() + 'px');
+    $('.middle').css('width', $('body').width() + $('.sidebar').width() + 'px');
   }
+}
+
+function bottomFix(){
   
+  
+  if($('.sidebar').hasClass('visible')){
+    $('.pagination-section').css('width', $('.container-inner').width() + 'px');
+  } else{
+    $('.pagination-section').css('width', $('.container-inner').width() + $('.sidebar').width() + 'px');
+  }
 }
 
 function sidebarHintAnimation(){
