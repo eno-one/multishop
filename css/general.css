@@ -31,12 +31,14 @@ a{
 }
 .container {
   width: 100%;
+  min-height: 100%;
   float: left;
   overflow: hidden;
   position: relative;
   
 }
 .container-inner {
+  min-height: 100%;
   padding: 0 0 0 220px;
 }
 .background{
@@ -47,10 +49,16 @@ a{
   position: absolute;
 }
 .content{
-  padding: 20px;
+  min-height: 95%;
+  padding: 20px 20px 0;
   background-color: #F4F4F4;
   border-left: 1px solid #949597;
 }
+.general-form{
+  min-height: 100%;
+  margin: -20px;
+}
+
 .show-block-hint{
   display: none;
   height: 100%;

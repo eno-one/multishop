@@ -10,117 +10,26 @@
   <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 <style>
-  .w25{
-    float: left;
-    width: 23%;
-    margin-right: 2%;
+  .parent{
+    display: block;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: yellowgreen;
   }
-  .w33{
-    float: left;
-    width: 31%;
-    margin-right: 2%;
-  }
-  .w50{
-    float: left;
-    width: 48%;
-    margin-right: 2%;
-  }
-  .w66{
-    float: left;
-    width: 64%;
-    margin-right: 2%;
-  }
-  .w75{
-    float: left;
-    width: 73%;
-    margin-right: 2%;
-  }
-  .type-text input{
+  .child{
+    display: block;
+    position: absolute;
     width: 100%;
-  }
-  .type-select select{
-    width: 100%;
-  }
-  dd{
-    margin: 0;
+    height: 100px;
+    background-color: green;
   }
   
 </style>
 </head>
 <body>
-  
-  <div class="row">
-    <dl class="w25 type-text">
-      <dt>qwe</dt>
-      <dd><input type="text"></dd>
-    </dl>
-    <dl class="w25 type-text">
-      <dt>qwe</dt>
-      <dd><input type="text"></dd>
-    </dl>
-    <dl class="w25 type-text">
-      <dt>qwe</dt>
-      <dd><input type="text"></dd>
-    </dl>
-    <dl class="w25 type-text">
-      <dt>qwe</dt>
-      <dd><input type="text"></dd>
-    </dl>
+  <div class="parent">
+    <div class="child"></div>
   </div>
-  
-  <div class="row">
-    <dl class="w25 type-select">
-      <dt>qwe</dt>
-      <dd> <select><option>ds</option></select></dd>
-    </dl>
-    <dl class="w50 type-text">
-      <dt>qwe</dt>
-      <dd><input type="text"></dd>
-    </dl>
-    <dl class="w25 type-text">
-      <dt>qwe</dt>
-      <dd><input type="text"></dd>
-    </dl>
-  </div>
-  
-  <div class="row">
-    <dl class="w75 type-select">
-      <dt>qwe</dt>
-      <dd> <select><option>ds</option></select></dd>
-    </dl>
-
-    <dl class="w25 type-text">
-      <dt>qwe</dt>
-      <dd><input type="text"></dd>
-    </dl>
-  </div>
-  
-  <div class="row">
-    <dl class="w33 type-text">
-      <dt>qwe</dt>
-      <dd><input type="text"></dd>
-    </dl>
-
-    <dl class="w33 type-text">
-      <dt>qwe</dt>
-      <dd><input type="text"></dd>
-    </dl>
-    <dl class="w33 type-text">
-      <dt>qwe</dt>
-      <dd><input type="text"></dd>
-    </dl>
-  </div>
-    <div class="row">
-    <dl class="w33 type-select">
-      <dt>qwe</dt>
-      <dd> <select><option>ds</option></select></dd>
-    </dl>
-
-    <dl class="w66 type-text">
-      <dt>qwe</dt>
-      <dd><input type="text"></dd>
-    </dl>
-  </div>
-  
 </body>
 </html>

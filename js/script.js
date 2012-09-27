@@ -1,6 +1,5 @@
 $(document).ready(function(){
   sidebarHintAnimation(); // хинт сайдбара
- // tfootFix($('.with-fix')); // фикс футера таблицы
   middleHeight(); // эмуляция одинаковой высоты колонок
   
   $('.block-fieldset').find('.row:first').addClass('first-row');
@@ -25,7 +24,6 @@ $(document).ready(function(){
   var temp;
   
   $(window).resize(function(){
-    //tfootFix();
     middleHeight();
     middleResize();
   });
@@ -102,9 +100,10 @@ function middleWidthDetect(){
 
 function middleResize(){
   if($('.sidebar').hasClass('visible')){
-    $('.middle').css('width', $('body').width() - $('.sidebar').width() + 'px');
-  } else{
     $('.middle').css('width', $('body').width() + 'px');
+  } else{
+    console.log(132);
+    $('.middle').css('width', $('body').width() - $('.sidebar').width() + 'px');
   }
   
 }
@@ -129,7 +128,7 @@ function middleHeight(){
     $middle.css('height', (windowHeight - middleTop) + 'px');
   }    
 }
-
+/*
 function tfootFix($table){
   var windowHeight = $(window).height(),
       //$table = $('.with-fix'),
@@ -142,7 +141,7 @@ function tfootFix($table){
     $table.css('margin-bottom', '0px');
   }
 }
-
+*/
 function tableWidth(){
   var $middle = $('.middle');
   $middle.css('width', '100%');
