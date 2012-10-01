@@ -116,8 +116,8 @@ function middleResize(){
   }
 }
 
-function bottomFix(){
-  
+function bottomFix(){ 
+  //console.log($('.container-inner').width() + ', ' + $('.pagination-section').width());
   
   if($('.sidebar').hasClass('visible')){
     $('.pagination-section').css('width', $('.container-inner').width() + 'px');
