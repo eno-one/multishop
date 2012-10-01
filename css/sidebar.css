@@ -1,11 +1,3 @@
-/*--- sidebar-inner ---
-.sidebar{
-  vertical-align: top;
-  width: 220px;
-  border-right: 1px solid #949597;
-  background-color: #f4f4f4;
-}
-*/
 /* Sidebar Left
 -----------------------------------------------------------------------------*/
 .hide-block{
@@ -21,9 +13,10 @@
 }
 
 .hidden{
-   display: none;
+/*   display: none;*/
 }
 .sidebar-inner {
+  
   padding: 18px 0 1px;
   background: #F4F4F4;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0e0e0', endColorstr='#f4f4f4');
@@ -31,6 +24,11 @@
     background: -moz-linear-gradient(top,  #e0e0e0,  #f4f4f4); 
     background: -o-linear-gradient(top,  #e0e0e0,  #f4f4f4);
     background: -ms-linear-gradient(top,  #e0e0e0,  #f4f4f4);
+}
+.sidebar-block{
+
+  position: relative;
+  z-index: 2;
 }
 .sidebar-inner h2{
   text-align: center;

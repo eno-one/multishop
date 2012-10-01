@@ -3,7 +3,7 @@ $(document).ready(function(){
   middleHeight(); // эмуляция одинаковой высоты колонок
   
   $('.block-fieldset').find('.row:first').addClass('first-row');
-  $('.hide-block').on('click', function(){
+  $('.fake-sidebar').on('click', function(){
     hideSidebar();
   });
   
@@ -28,10 +28,8 @@ $(document).ready(function(){
     middleResize();
     bottomFix();
   });
-  
-  
-  
-    /*--- sliding в журнале ---*/
+
+/*--- sliding в журнале ---*/
   
   $('.sliding').click(function(){
 
@@ -116,9 +114,7 @@ function middleResize(){
   }
 }
 
-function bottomFix(){ 
-  //console.log($('.container-inner').width() + ', ' + $('.pagination-section').width());
-  
+function bottomFix(){   
   if($('.sidebar').hasClass('visible')){
     $('.pagination-section').css('width', $('.container-inner').width() + 'px');
   } else{
@@ -146,20 +142,7 @@ function middleHeight(){
     $middle.css('height', (windowHeight - middleTop) + 'px');
   }    
 }
-/*
-function tfootFix($table){
-  var windowHeight = $(window).height(),
-      //$table = $('.with-fix'),
-      tableBottom = $table.height() + $table.offset().top;
-      $tfoot = $('.pagination-section'); 
 
-  if(tableBottom > windowHeight){
-    $tfoot.css('position', 'fixed');
-  } else {
-    $table.css('margin-bottom', '0px');
-  }
-}
-*/
 function tableWidth(){
   var $middle = $('.middle');
   $middle.css('width', '100%');
