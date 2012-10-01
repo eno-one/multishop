@@ -13,6 +13,7 @@
   background: url('../img/headerBg.jpg') repeat-x 0 0;
   border-bottom: 1px solid #999;
   position: relative;
+  z-index: 3;
 }
 .header a {
   color: #eae9e9;

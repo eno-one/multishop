@@ -27,7 +27,7 @@ a{
   min-width: 940px;
   position: relative;
   overflow: hidden;
-  background: url('../img/bg.jpg') repeat-y 0 0;
+/*  background: url('../img/bg.jpg') repeat-y 0 0;*/
 }
 .container {
   width: 100%;
@@ -38,9 +38,9 @@ a{
   
 }
 .container-inner {
-/*  min-height: 100%;*/
   padding: 0 0 0 220px;
 }
+/*
 .background{
   background: url('../img/bg.jpg') repeat-y 0 0;
   display: block;
@@ -48,14 +48,13 @@ a{
   width: 100%;
   position: absolute;
 }
+*/
 .content{
-/*  min-height: 95%;*/
   padding: 20px;
   background-color: #F4F4F4;
   border-left: 1px solid #949597;
 }
 .general-form{
-/*  min-height: 100%;*/
   margin: -20px;
 }
 
@@ -92,4 +91,6 @@ a{
   position: fixed;
   width: 220px;
   z-index: 1;
+  background-color: #F4F4F4;
+  margin-top: -40px;
 }

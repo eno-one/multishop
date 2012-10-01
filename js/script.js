@@ -1,6 +1,6 @@
 $(document).ready(function(){
   sidebarHintAnimation(); // хинт сайдбара
-  middleHeight(); // эмуляция одинаковой высоты колонок
+  //middleHeight(); // эмуляция одинаковой высоты колонок
   
   $('.block-fieldset').find('.row:first').addClass('first-row');
   $('.fake-sidebar').on('click', function(){
