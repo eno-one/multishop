@@ -1,13 +1,7 @@
 /* Header
 -----------------------------------------------------------------------------*/
 .header {
-/*  max-width: 1500px;*/
   height: 29px;
-  /*
-  box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    */
   padding-top: 5px;
   padding: 5px 20px 5px 30px;
   background: url('../img/headerBg.jpg') repeat-x 0 0;

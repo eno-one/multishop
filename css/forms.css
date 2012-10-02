@@ -32,6 +32,15 @@
   border-radius: 2px;
   border: 1px solid #afafaf;
 }
+.horizontal .type-text input{
+  padding: 1px 4px;
+  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  border-radius: 2px;
+  border: 1px solid #afafaf;
+}
+
 .vertical.type-text textarea{
   width: 97%;
   padding: 1px 4px;

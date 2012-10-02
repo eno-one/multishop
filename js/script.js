@@ -1,13 +1,12 @@
 $(document).ready(function(){
   sidebarHintAnimation(); // хинт сайдбара
-  //bottomFix(); // фикс пагинотора
+  bottomFix(); // фикс пагинотора
   
-  tfootFix($('.with-fix'));
+  //tfootFix($('.with-fix')); // раскомментить, когда придумаю, как это запилить, блин!
   
   $(window).resize(function(){
-    //middleHeight();
     middleResize();
-  //  bottomFix();
+    bottomFix();
   });
   
   $('.block-fieldset').find('.row:first').addClass('first-row');
@@ -29,10 +28,7 @@ $(document).ready(function(){
   });
 
   $('.sliding').on('click', function(e){
-    if($(this).parents().is('thead')){
-      $('.child').slideToggle();
-      e.preventDefault();
-    }
+    allTrSliding($(this));
   });
   
   $('tr.parent').on('click', function(){
@@ -41,6 +37,13 @@ $(document).ready(function(){
 });
 
 //------ functions ------------------------------------------------------------
+function allTrSliding($obj){
+    if($obj.parents().is('thead')){
+      $('.child').slideToggle();
+      e.preventDefault();
+    }
+}    
+
 // слайдинг в сайдбаре
 function menuSliding($obj){
   $obj.toggleClass('closed').toggleClass('opened');
@@ -52,7 +55,7 @@ function menuSliding($obj){
 function trSliding($obj){
     var id= $obj.attr('id');
     
-    $('.parent-'+id).slideToggle(200);
+    $('.parent-'+id).slideToggle(200).toggleClass('visible');
     $obj.find('.sliding').toggleClass('closed-sign');
     $obj.find('.category-name').toggleClass('categ-opened');
 }
@@ -149,7 +152,6 @@ function tableWidth(){
 */
 function tfootFix($table){
   var windowHeight = $(window).height(),
-      //$table = $('.with-fix'),
       tableBottom = $table.height() + $table.offset().top;
       $tfoot = $('.pagination-section'); 
 
