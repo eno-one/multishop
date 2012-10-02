@@ -17,6 +17,9 @@ thead th{
   text-shadow: 0px 1px 1px #000;
   background: url("../img/table-border.png") no-repeat scroll right center transparent;
 }
+thead th:last-child{
+  background: none;
+}
 .text-left{
   text-align: left;
 }

@@ -6,9 +6,7 @@
 }
 */
 .direction{
-  border: 1px solid #999;
-  border-top: none;
-  border-left: none;
+  border-bottom: 1px solid #999;
   background: #ededed; /* for non-css3 browsers */ 
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#e3e3e3'); /* для IE6-9 */
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f7f7f7), to(#e3e3e3));
@@ -140,6 +138,7 @@
 .filtration{
   border: 1px solid #999;
   border-top-color: #f6f6f6;
+  border-right: none;
   border-left: none;
   padding: 9px;
   min-height: 20px;
@@ -176,7 +175,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
   padding: 10px 0.8%;
-  border-right-color: #999;
+  border-right-color: #6D757F;
   border-left: none;
   text-shadow: 0 1px 1px #FFF;
   overflow: hidden;
@@ -191,6 +190,7 @@
 .pagination-section{
   position: fixed;
   bottom: 0;
+  z-index: 2;
 }
 .pagination-section .border,
 .button-group .border{

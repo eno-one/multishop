@@ -4,9 +4,10 @@ html{
 
 body {
   font: 13px/20px Verdana, sans-serif;
-  background-color: #8C96A3;
+  background-color: #dadada;
   min-height: 100%;
   max-width: 1500px;
+  border-right: 1px solid #6D757F;
 }
 p {
   margin: 0 0 18px;
@@ -27,7 +28,7 @@ a{
   min-width: 940px;
   position: relative;
   overflow: hidden;
-  background-color: #dadada;
+  
 }
 .container {
   width: 100%;
@@ -76,12 +77,16 @@ a{
   margin-top: -10px;
 }
 .fake-sidebar{
-  display: block;
-  height: 100%;
   position: fixed;
-  width: 220px;
-  z-index: 1;
+  
+  display: block;
+  border-right: 1px solid #949597;
   background-color: #F4F4F4;
   margin-top: -40px;
+  
+  height: 100%;
+  width: 220px;
+  z-index: 1;
+  
   cursor: url('../img/hide.png'), ew-resize;
 }

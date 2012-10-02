@@ -116,12 +116,14 @@ function middleResize(){
   }
 }
 
-function bottomFix(){   
+function bottomFix(){  
+  
   if($('.sidebar').hasClass('visible')){
     $('.pagination-section').css('width', $('.container-inner').width() + 'px');
   } else{
     $('.pagination-section').css('width', $('.container-inner').width() + $('.sidebar').width() + 'px');
   }
+  
 }
 
 function sidebarHintAnimation(){
