@@ -21,6 +21,7 @@ $(document).ready(function(){
 
   $('.menu-category').on('click', function(){
     menuSliding($(this));
+    //bottomFix();
   });
   
   $('.open-filtr').on('click', function(){
@@ -47,7 +48,9 @@ function allTrSliding($obj){
 // слайдинг в сайдбаре
 function menuSliding($obj){
   $obj.toggleClass('closed').toggleClass('opened');
-  $obj.parent().next('ul').slideToggle(200);
+  $obj.parent().next('ul').slideToggle(200, function(){
+    bottomFix();
+  });
   return false;
 }
 
