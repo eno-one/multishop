@@ -260,18 +260,19 @@
     padding: 21px 0 0;
     display: table-cell;
 }
-.name, .phone {
+.order-detailed .name, 
+.order-detailed .phone {
     font-size: 18px;
     margin-bottom: 6px;
 }
-.phone span {
+.order-detailed .phone span {
     color: #AAAAAA;
 }
 
-.adress {
-    font-size: 12px;
-    margin: 19px 0 5px;
-    max-width: 550px;
+.order-detailed .adress {
+  font-size: 12px;
+  margin: 19px 0 5px;
+  max-width: 550px;
 }
 .order-comment {
     color: #AAAAAA;
