@@ -21,6 +21,9 @@ a{
 .inline-block{
   display: inline-block;
 }
+.hidden{
+  display: none;
+}
 /* Middle
 -----------------------------------------------------------------------------*/
 .middle {
@@ -50,7 +53,7 @@ a{
 .show-block-hint{
   display: none;
   
-  cursor: url('../img/show.png'), pointer;
+  cursor: url('../img/show2.png'), pointer;
   
   position: fixed;
   z-index: 100;
@@ -88,5 +91,5 @@ a{
   width: 220px;
   z-index: 1;
   
-  cursor: url('../img/hide.png'), ew-resize;
+  cursor: url('../img/hide2.png'), ew-resize;
 }

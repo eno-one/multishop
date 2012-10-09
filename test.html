@@ -28,8 +28,94 @@
 </style>
 </head>
 <body>
-  <div class="parent">
-    <div class="child"></div>
-  </div>
+
+<ul class="localities">
+  <li><a href="#" class="current">Москва</a></li>
+  <li><a href="#">Санкт-Петербург</a></li>
+  <li><a href="#">Сочи</a></li>
+  <li><a href="#">Краснодар</a></li>
+  <li><a href="#">Уфа</a></li>
+</ul> 
+<ul class="localoties-info">
+  <li>
+    <dl class="vcard">
+      <dt>Тел.:</dt>
+      <dd class="tel">+7 (495) 989-16-39</dd>
+    </dl>
+    <dl>
+      <dt>e-mail:</dt>
+      <dd><a href="mailto:shopwimax@gmail.com" class="email">shopwimax@gmail.com</a></dd>
+    </dl>
+    <dl>
+      <dt>Адрес:</dt>
+      <dd><span class='postal-code'>123060</span>, <span class="street-address">ул. Берзарина, д. 36, стр. 1</span></dd>
+    </dl>
+    <dl>
+      <dt>Часы работы:</dt>
+      <dd><span class="workhours">Пн.-Пт., 09:00 - 18:00</span></dd>
+    </dl>
+
+
+    <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) 
+    <div id="ymaps-map-id_13372454242527184113215" style="width: 404px; height: 329px; border: 1px solid #bbb;"></div>
+    <div style="width: 404px; text-align: right;"></div>
+    <script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_13372454242527184113215"></script>
+    <script type="text/javascript">
+    function fid_13372454242527184113215(ymaps) {
+        var map = new ymaps.Map("ymaps-map-id_13372454242527184113215", {
+            center: [37.4794840331523, 55.792028692142026],
+            zoom: 14,
+            type: "yandex#map"
+        });
+        map.controls
+            .add("zoomControl")
+            .add("mapTools")
+            .add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));
+        map.geoObjects
+            .add(new ymaps.Placemark([37.466676239864505, 55.790692402262046], {
+                balloonContent: "Shop-WiMAX"
+            }, {
+                preset: "twirl#nightDotIcon"
+            }))
+            .add(new ymaps.Polyline([
+                [37.49189236054471, 55.79422320261467],
+                [37.49300815949481, 55.79363086242622],
+                [37.49296311701659, 55.79328529350964],
+                [37.490752976788094, 55.79190714867226],
+                [37.48324064564868, 55.791871485374394],
+                [37.4800219948305, 55.78977999466789],
+                [37.47824100804469, 55.78867980112321],
+                [37.477629464389, 55.788462176725325],
+                [37.47628835988148, 55.78849844754313],
+                [37.47272638630951, 55.78900623543722],
+                [37.46916441273749, 55.78940520697773],
+                [37.46776966405009, 55.78976790480502],
+                [37.46641783070703, 55.790251496653696]
+            ], {
+                balloonContent: "м. Октябрьское Поле. Первый вагон из центра, налево по переходу к остановке.<br/><br/>Маршрутка 253м"
+            }, {
+                strokeColor: "006cff",
+                strokeWidth: 5,
+                strokeOpacity: 0.8
+            }));
+    };
+    </script>
+     Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+  </li>
+  <li>
+    <span class="tel">+7 (812) 612-44-95</span>
+    <span class="street-address">пр-кт Римского-Корсакова, д.71</span> (предварительно обязательно звоните)
+  </li>
+  <li>
+    <span class="tel">+7 (8622) 95-58-45</span>
+  </li>
+  <li>
+    <span class="tel">+7 (861) 299-91-60</span>
+  </li>
+  <li>
+    <a href="mailto:shopwimax@gmail.com" class="email">shopwimax@gmail.com</a>
+  </li>
+</ul>  
+
 </body>
 </html>

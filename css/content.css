@@ -1,10 +1,3 @@
-/*
-.container{
-  background-color: #8c96a3;
-  vertical-align: top;
-  border-left: 1px solid #949597;
-}
-*/
 .direction{
   border-bottom: 1px solid #999;
   background: #ededed; /* for non-css3 browsers */ 
@@ -239,9 +232,66 @@
   text-decoration: none;
 }
 .page-navi .type-text input {
-    text-align: center;
-    width: 25px;
+  text-align: center;
+  width: 25px;
+}
+.table-row{
+  display: table-row;
+}
+.order-number {
+  padding-right: 15px;
+  display: table-cell;
+}
+.number {
+  font-size: 30px;
+  margin-top: 7px;
+  padding: 20px 10px;
+  text-align: center;
+}
+.order-detailed .order-date {
+  background-color: #E7E7E7;
+  border: 1px solid #E7E7E7;
+  padding: 10px;
+}
+.order-detailed a {
+    text-decoration: underline;
+}
+.client {
+    padding: 21px 0 0;
+    display: table-cell;
+}
+.name, .phone {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+.phone span {
+    color: #AAAAAA;
 }
 
+.adress {
+    font-size: 12px;
+    margin: 19px 0 5px;
+    max-width: 550px;
+}
+.order-comment {
+    color: #AAAAAA;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+.order-detailed dl {
+    font-size: 12px;
+}
+.order-comments {
+    width: 650px;
+}
 
+.order-detailed dt {
+    color: #AAAAAA;
+    float: left;
+    font-weight: normal;
+    margin-right: 5px;
+}
+.order-detailed dd {
+    color: #333333;
+}
 

@@ -7,6 +7,7 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="js/fancy/jquery.fancybox.css" type="text/css" media="screen, projection" />
   <!--[if IE]>
     <link rel="stylesheet" href="css/style-ie.css">
     <script type="text/javascript" src="js/ie6fix.js"></script>
@@ -21,7 +22,16 @@
     <![endif]-->
   <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
-
+  <script type="text/javascript" src="js/fancy/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("a.fancy").fancybox({
+        'padding' : 10,
+        prevEffect : 'fade',  // для версии 2.0.5
+        nextEffect : 'fade'  // для версии 2.0.5
+      });   
+    });
+  </script>
 </head>
 
 <body>
@@ -116,7 +126,68 @@
                 </thead>
                 <tbody>
                   <tr class="status-1 odd">
-                    <td class="text-center"><dl class="horizontal"><dd class="type-check"><input type="checkbox"></dd></dl></td> <td><a href="#qqq" class="fancy">1025</a></td> <td class="text-right">14 562</td> <td>Петров Пётр Петрович</td> <td>Москва</td> <td>Южная, д. 45, кв1</td> <td>Wi-Fi</td> <td>05.04.2001</td> <td>Антон</td> <td>Оплачен</td> <td><a href="#" class="print" title="Распечатать"></a> <a href="#" class="edit" title="Изменить заказ"></a></td>
+                    <td class="text-center"><dl class="horizontal"><dd class="type-check"><input type="checkbox"></dd></dl></td>
+                    <td>
+                      <a href="#qqq" class="fancy">1025</a>
+                      <div class="hidden">
+                        <div class="order-detailed" id="qqq">
+                          <div class="table-row">
+                            <div class="order-number">
+                                <div class="number ">421456</div>
+                                <div class="order-date">
+                                  <a href="/moderator/orders/421/edit">Изменить</a>
+                                </div>
+                            </div>
+                            <div class="client">
+                              <p class="name">Ольга Панова</p>
+                              <p class="phone"><span>Тел.:</span>8-916-782-09-41</p>
+                              <p class="adress">
+                                <a title="Показать на карте" target="_blank" href="#">МО, Раменский р-он, п. Удельная ул. Шахова, д. 8, кв. 48, МО, Раменский р-он, п. Удельная ул. Шахова, д. 8, кв. 48</a>
+                              </p>
+                              <dl>
+                                <dt>Доставка:</dt>
+                                <dd>Courier</dd>
+                              </dl>
+                            </div>
+                          </div>  
+                          <table style="margin-top: 18px;">
+                            <thead>
+                              <tr>
+                                <th colspan="2" class="col-product">Товар</th>
+                                <th class="col-price">Цена</th>
+                                <th class="col-qty">Кол-во</th>
+                                <th class="col-total">Итого</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="odd">
+                                <td><a target="_blank" href="#">JD 2368 Серебро</a></td>
+                                <td><span class="detail"></span></td>
+                                <td class="price"><span class="uc-price">1 960</span></td>
+                                <td class="qty">3</td>
+                                <td class="price"><span class="uc-price">5 880</span></td> 
+                              </tr>
+                              <tr class="even" style="background-color: #FFFFFF;">
+                                <td colspan="2">Доставка</td>
+                                <td class="price"><span class="uc-price">0</span></td>
+                                <td class="qty">1</td>
+                                <td class="price"><span class="uc-price">0</span></td>
+                              </tr>
+                              <tr class="itogo odd">
+                                <td colspan="3">Итого</td>
+                                <td class="qty">3</td>
+                                <td class="price"><span class="uc-price">5 880</span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="order-comment">Комментарии</div>
+                          <dl class="order-comments">
+                            <dt>08.10.2012</dt><dd>Заказ сделан через сайт.</dd>
+                          </dl>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="text-right">14 562</td> <td>Петров Пётр Петрович</td> <td>Москва</td> <td>Южная, д. 45, кв1</td> <td>Wi-Fi</td> <td>05.04.2001</td> <td>Антон</td> <td>Оплачен</td> <td><a href="#" class="print" title="Распечатать"></a> <a href="#" class="edit" title="Изменить заказ"></a></td>
                   </tr>
                   <tr class="status-2 even">
                     <td class="text-center"><dl class="horizontal"><dd class="type-check"><input type="checkbox"></dd></dl></td> <td><a href="#">1025</a></td> <td class="text-right">562</td> <td>Иванов Иван Иваныч</td> <td>Москва</td> <td>Коммунситическая ул, д.78, кв 4</td> <td>Wi-Fi</td> <td>05.04.2001</td> <td>Саша</td> <td>Оплачен</td> <td><a href="#" class="print" title="Распечатать"></a> <a href="#" class="edit" title="Изменить заказ"></a></td>
